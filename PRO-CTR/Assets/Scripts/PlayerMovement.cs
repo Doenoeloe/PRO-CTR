@@ -22,19 +22,11 @@ public class PlayerMovement : MonoBehaviour
         if (collisionTilemap == null)
         {
             collisionTilemap = GameObject.Find("CollisionTilemap")?.GetComponent<Tilemap>();
-            if (collisionTilemap == null)
-            {
-                Debug.LogWarning("CollisionTilemap niet gevonden! Zorg dat er een GameObject genaamd 'CollisionTilemap' bestaat met een Tilemap component.");
-            }
         }
 
         if (grid == null)
         {
             grid = FindObjectOfType<Grid>();
-            if (grid == null)
-            {
-                Debug.LogWarning("Geen Grid object gevonden in de scene!");
-            }
         }
 
         void Update()

@@ -14,6 +14,7 @@ public class Countdown : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        player.GetComponent<PlayerMovement>().canMove = false;
         StartCoroutine(StartCountDown());
     }
     IEnumerator StartCountDown()
@@ -23,6 +24,7 @@ public class Countdown : MonoBehaviour
             if (i == 0)
             {
                 countdownText.gameObject.SetActive(false);
+                player.GetComponent<PlayerMovement>().canMove = true;
             }
             countdownText.text = i.ToString();
             yield return new WaitForSeconds(1.0f);

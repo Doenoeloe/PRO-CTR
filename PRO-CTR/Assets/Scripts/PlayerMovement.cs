@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (grid == null)
         {
-            grid = FindObjectOfType<Grid>();
+            grid = FindObjectOfType<Grid>();    
         }
 
         void Update()

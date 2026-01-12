@@ -1,0 +1,1238 @@
+fileFormatVersion: 2
+guid: 652c4be01b9cb6141b9697d4ca8921d5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4173823650060166614
+    second: Grid-based sheet_0
+  - first:
+      213: -1914471240096350121
+    second: Grid-based sheet_1
+  - first:
+      213: -4033354614926572490
+    second: Grid-based sheet_2
+  - first:
+      213: 1183751747750379877
+    second: Grid-based sheet_3
+  - first:
+      213: -1193042888455371105
+    second: Grid-based sheet_4
+  - first:
+      213: -6796059879625599539
+    second: Grid-based sheet_5
+  - first:
+      213: -2321876987816988181
+    second: Grid-based sheet_6
+  - first:
+      213: -5877665555124785709
+    second: Grid-based sheet_7
+  - first:
+      213: -607249623051856519
+    second: Grid-based sheet_8
+  - first:
+      213: -3983023729318612871
+    second: Grid-based sheet_9
+  - first:
+      213: -53082090734760989
+    second: Grid-based sheet_10
+  - first:
+      213: 1827088866039729018
+    second: Grid-based sheet_11
+  - first:
+      213: 403969505854920752
+    second: Grid-based sheet_12
+  - first:
+      213: 5802928340007953359
+    second: Grid-based sheet_13
+  - first:
+      213: -5839611014441726729
+    second: Grid-based sheet_14
+  - first:
+      213: -4138799458764056936
+    second: Grid-based sheet_15
+  - first:
+      213: 7338315989609976350
+    second: Grid-based sheet_16
+  - first:
+      213: -3450446391514258394
+    second: Grid-based sheet_17
+  - first:
+      213: -4508469593850968965
+    second: Grid-based sheet_18
+  - first:
+      213: -8974228353729447380
+    second: Grid-based sheet_19
+  - first:
+      213: -4713669698834767130
+    second: Grid-based sheet_20
+  - first:
+      213: 8781863263057264342
+    second: Grid-based sheet_21
+  - first:
+      213: -3923797557222044669
+    second: Grid-based sheet_22
+  - first:
+      213: 5097189801753340289
+    second: Grid-based sheet_23
+  - first:
+      213: -1196383159407225458
+    second: Grid-based sheet_24
+  - first:
+      213: -369901708233532282
+    second: Grid-based sheet_25
+  - first:
+      213: 5197023131650536034
+    second: Grid-based sheet_26
+  - first:
+      213: 124220346789141647
+    second: Grid-based sheet_27
+  - first:
+      213: -3086091554455964254
+    second: Grid-based sheet_28
+  - first:
+      213: -3594639550153000969
+    second: Grid-based sheet_29
+  - first:
+      213: 2602986921114976158
+    second: Grid-based sheet_30
+  - first:
+      213: 7350381319900737715
+    second: Grid-based sheet_31
+  - first:
+      213: -239118420872282116
+    second: Grid-based sheet_32
+  - first:
+      213: 2524399249243553134
+    second: Grid-based sheet_33
+  - first:
+      213: 3559334055165576323
+    second: Grid-based sheet_34
+  - first:
+      213: 2930783186759004011
+    second: Grid-based sheet_35
+  - first:
+      213: -2188437668171432924
+    second: Grid-based sheet_36
+  - first:
+      213: 8807770395349546972
+    second: Grid-based sheet_37
+  - first:
+      213: 5117333151851170011
+    second: Grid-based sheet_38
+  - first:
+      213: 4738531647639680149
+    second: Grid-based sheet_39
+  - first:
+      213: 1209700516682306688
+    second: Grid-based sheet_40
+  - first:
+      213: 3253617434220536282
+    second: Grid-based sheet_41
+  - first:
+      213: -4790424104675469493
+    second: Grid-based sheet_42
+  - first:
+      213: 7058457449353777101
+    second: Grid-based sheet_43
+  - first:
+      213: 8123581117615806694
+    second: Grid-based sheet_44
+  - first:
+      213: -2881883463289890911
+    second: Grid-based sheet_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Grid-based sheet_0
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 838
+        width: 138
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2a1a0f01899316c0800000000000000
+      internalID: -4173823650060166614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_1
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 839
+        width: 134
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7500b59ec8e6e65e0800000000000000
+      internalID: -1914471240096350121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_2
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 844
+        width: 132
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6348e1ce855a608c0800000000000000
+      internalID: -4033354614926572490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_3
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 845
+        width: 135
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 561c8ea51f78d6010800000000000000
+      internalID: 1183751747750379877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_4
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 845
+        width: 137
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f96cfcf50d5717fe0800000000000000
+      internalID: -1193042888455371105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 705
+        width: 134
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc5d1aaeb8b8fa1a0800000000000000
+      internalID: -6796059879625599539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 839
+        width: 132
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be1b3017e2907cfd0800000000000000
+      internalID: -2321876987816988181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_7
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 703
+        width: 138
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ddec3e91565e6ea0800000000000000
+      internalID: -5877665555124785709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_8
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 567
+        width: 138
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97511086fad9297f0800000000000000
+      internalID: -607249623051856519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_9
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 427
+        width: 138
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970330a650579b8c0800000000000000
+      internalID: -3983023729318612871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_10
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 696
+        width: 134
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ebc1d5ae1a634ff0800000000000000
+      internalID: -53082090734760989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_11
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 568
+        width: 140
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b8e51b4af1b5910800000000000000
+      internalID: 1827088866039729018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_12
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 419
+        width: 133
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 038929010203b9500800000000000000
+      internalID: 403969505854920752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_13
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 428
+        width: 138
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc3a83b7494288050800000000000000
+      internalID: 5802928340007953359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_14
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 701
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc0eb1d8b885fea0800000000000000
+      internalID: -5839611014441726729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_15
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 567
+        width: 133
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8961acf02d70096c0800000000000000
+      internalID: -4138799458764056936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_16
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 701
+        width: 138
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e129542338fe6d560800000000000000
+      internalID: 7338315989609976350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_17
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 567
+        width: 139
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 624a345c94d8d10d0800000000000000
+      internalID: -3450446391514258394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_18
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 426
+        width: 138
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b740dd19ac2be61c0800000000000000
+      internalID: -4508469593850968965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_20
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 699
+        width: 142
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e26e6c026ea59eb0800000000000000
+      internalID: -4713669698834767130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_21
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 561
+        width: 138
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6deb4940c127fd970800000000000000
+      internalID: 8781863263057264342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_22
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 422
+        width: 138
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30c0c3f29eedb89c0800000000000000
+      internalID: -3923797557222044669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_24
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 699
+        width: 138
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85d540fad7956fe0800000000000000
+      internalID: -1196383159407225458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_25
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 563
+        width: 138
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c1eee2b58dddaf0800000000000000
+      internalID: -369901708233532282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_26
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 423
+        width: 138
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 262b483d0098f1840800000000000000
+      internalID: 5197023131650536034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 567
+        width: 136
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a5b15005100c25d0800000000000000
+      internalID: -3086091554455964254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 419
+        width: 141
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f77f85df564d1ec0800000000000000
+      internalID: -3594639550153000969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_31
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 293
+        width: 138
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0b950dddcc10660800000000000000
+      internalID: 7350381319900737715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_32
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 291
+        width: 136
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cffb7a8201b7eacf0800000000000000
+      internalID: -239118420872282116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_33
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 291
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6dbc6a0eb7780320800000000000000
+      internalID: 2524399249243553134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_34
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 293
+        width: 140
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 384481b077b456130800000000000000
+      internalID: 3559334055165576323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_35
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 285
+        width: 140
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f2578c7cb3ca820800000000000000
+      internalID: 2930783186759004011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_36
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 285
+        width: 140
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42cbe8f198b11a1e0800000000000000
+      internalID: -2188437668171432924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 283
+        width: 139
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd84b69836b640740800000000000000
+      internalID: 5117333151851170011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_39
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 159
+        width: 138
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 594728e7d65a2c140800000000000000
+      internalID: 4738531647639680149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_40
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 158
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084947de538b9c010800000000000000
+      internalID: 1209700516682306688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_41
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 161
+        width: 138
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad1abb961db272d20800000000000000
+      internalID: 3253617434220536282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_42
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 159
+        width: 139
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b47995558aef48db0800000000000000
+      internalID: -4790424104675469493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_43
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 159
+        width: 138
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcf01f227ada4f160800000000000000
+      internalID: 7058457449353777101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_44
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 155
+        width: 138
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e89f836cf1ccb070800000000000000
+      internalID: 8123581117615806694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 159
+        width: 140
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7988e424e7108d0800000000000000
+      internalID: -2881883463289890911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grid-based sheet_30
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 842
+        width: 136
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3757e4d9d7606d74c93deb4de39d5989
+      internalID: 2602986921114976158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: eab022b71a266f140b0361e2db2df297
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Grid-based sheet_0: -4173823650060166614
+      Grid-based sheet_1: -1914471240096350121
+      Grid-based sheet_10: -53082090734760989
+      Grid-based sheet_11: 1827088866039729018
+      Grid-based sheet_12: 403969505854920752
+      Grid-based sheet_13: 5802928340007953359
+      Grid-based sheet_14: -5839611014441726729
+      Grid-based sheet_15: -4138799458764056936
+      Grid-based sheet_16: 7338315989609976350
+      Grid-based sheet_17: -3450446391514258394
+      Grid-based sheet_18: -4508469593850968965
+      Grid-based sheet_19: -8974228353729447380
+      Grid-based sheet_2: -4033354614926572490
+      Grid-based sheet_20: -4713669698834767130
+      Grid-based sheet_21: 8781863263057264342
+      Grid-based sheet_22: -3923797557222044669
+      Grid-based sheet_23: 5097189801753340289
+      Grid-based sheet_24: -1196383159407225458
+      Grid-based sheet_25: -369901708233532282
+      Grid-based sheet_26: 5197023131650536034
+      Grid-based sheet_27: 124220346789141647
+      Grid-based sheet_28: -3086091554455964254
+      Grid-based sheet_29: -3594639550153000969
+      Grid-based sheet_3: 1183751747750379877
+      Grid-based sheet_30: 2602986921114976158
+      Grid-based sheet_31: 7350381319900737715
+      Grid-based sheet_32: -239118420872282116
+      Grid-based sheet_33: 2524399249243553134
+      Grid-based sheet_34: 3559334055165576323
+      Grid-based sheet_35: 2930783186759004011
+      Grid-based sheet_36: -2188437668171432924
+      Grid-based sheet_37: 8807770395349546972
+      Grid-based sheet_38: 5117333151851170011
+      Grid-based sheet_39: 4738531647639680149
+      Grid-based sheet_4: -1193042888455371105
+      Grid-based sheet_40: 1209700516682306688
+      Grid-based sheet_41: 3253617434220536282
+      Grid-based sheet_42: -4790424104675469493
+      Grid-based sheet_43: 7058457449353777101
+      Grid-based sheet_44: 8123581117615806694
+      Grid-based sheet_45: -2881883463289890911
+      Grid-based sheet_5: -6796059879625599539
+      Grid-based sheet_6: -2321876987816988181
+      Grid-based sheet_7: -5877665555124785709
+      Grid-based sheet_8: -607249623051856519
+      Grid-based sheet_9: -3983023729318612871
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

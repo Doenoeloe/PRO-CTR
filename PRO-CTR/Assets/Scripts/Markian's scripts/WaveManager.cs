@@ -29,7 +29,6 @@ public class WaveManager : MonoBehaviour
                 WaveText.gameObject.SetActive(true);
                 WaveText.text = "Game Over";
                 StartCoroutine(Timer(2));
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 
 
             }
@@ -65,5 +64,6 @@ public class WaveManager : MonoBehaviour
     IEnumerator Timer(float pSeconds)
     {
         yield return new WaitForSecondsRealtime(pSeconds);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

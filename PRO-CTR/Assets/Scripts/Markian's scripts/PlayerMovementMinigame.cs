@@ -42,4 +42,8 @@ public class PlayerMovementMinigame : MonoBehaviour
     {
         return healthPoints;
     }
+    public void ApplyKnockBack(float pForce, Vector3 pDirection)
+    {
+        rb.AddForce(pDirection * pForce);
+    }
 }

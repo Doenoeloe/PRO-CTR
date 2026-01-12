@@ -3,6 +3,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float speed = 6f;
+    public float knockbackForce = 13f;
     Vector3 direction;
     float damage = 5;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -12,6 +13,7 @@ public class Projectile : MonoBehaviour
         {
             Debug.Log("Player Damage");
             collision.GetComponent<PlayerMovementMinigame>().TakeDamage(damage);
+            collision.GetComponent<PlayerMovementMinigame>().ApplyKnockBack(knockbackForce, -direction);
             Debug.Log($"Player Health: {collision.GetComponent<PlayerMovementMinigame>().DisplayHealthInfo()};");
         }
     }

@@ -23,9 +23,9 @@ public class WaveManager : MonoBehaviour
     {
         if (player != null)
         {
-            if (!player.GetComponent<PlayerMovement>().isAlive)
+            if (!player.GetComponent<PlayerMovementMinigame>().isAlive)
             {
-                player.GetComponent<PlayerMovement>().canMove = false;
+                player.GetComponent<PlayerMovementMinigame>().canMove = false;
                 WaveText.gameObject.SetActive(true);
                 WaveText.text = "Game Over";
                 StartCoroutine(Timer(2));

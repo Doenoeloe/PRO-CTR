@@ -1,7 +1,7 @@
 using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovementMinigame : MonoBehaviour
 {
     Vector3 MousePos;
     public bool isAlive = true;

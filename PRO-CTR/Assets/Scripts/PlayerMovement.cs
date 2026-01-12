@@ -3,63 +3,74 @@ using UnityEngine;
 
 public class GridMovement : MonoBehaviour
 {
-    [SerializeField] private bool isRepeatedMovement = false;
     [SerializeField] private float moveDuration = 0.1f;
     [SerializeField] private float gridSize = 1f;
 
-    private bool isMoving = false;
+    private Vector2 targetGridPosition;
+    private Coroutine moveRoutine;
+
+    private void Start()
+    {
+        SnapToGrid();
+    }
 
     private void Update()
     {
-        if (!isMoving)
+        if (Input.GetMouseButtonDown(0) && moveRoutine == null)
         {
-            System.Func<KeyCode, bool> inputFunction;
-            if (isRepeatedMovement)
-            {
-                inputFunction = Input.GetKey;
-            }
-            else
-            {
-                inputFunction = Input.GetKeyDown;
-            }
+            Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mouseWorld.z = 0f;
 
-            if (inputFunction(KeyCode.UpArrow))
-            {
-                StartCoroutine(Move(Vector2.up));
-            }
-            else if (inputFunction(KeyCode.DownArrow))
-            {
-                StartCoroutine(Move(Vector2.down));
-            }
-            else if (inputFunction(KeyCode.LeftArrow))
-            {
-                StartCoroutine(Move(Vector2.left));
-            }
-            else if (inputFunction(KeyCode.RightArrow))
-            {
-                StartCoroutine(Move(Vector2.right));
-            }
+
+            float targetX = Mathf.Round(mouseWorld.x / gridSize) * gridSize;
+            float targetY = Mathf.Round(mouseWorld.y / gridSize) * gridSize;
+
+            targetGridPosition = new Vector2(targetX, targetY);
+
+            moveRoutine = StartCoroutine(MoveToTarget());
         }
     }
 
-    private IEnumerator Move(Vector2 direction)
+    private IEnumerator MoveToTarget()
     {
-        isMoving = true;
-
-        Vector2 startPosition = transform.position;
-        Vector2 endPosition = startPosition + (direction * gridSize);
-
-        float elapsedTime = 0;
-        while (elapsedTime < moveDuration)
+        while ((Vector2)transform.position != targetGridPosition)
         {
-            elapsedTime += Time.deltaTime;
-            float percent = elapsedTime / moveDuration;
-            transform.position = Vector2.Lerp(startPosition, endPosition, percent);
-            yield return null;
+            Vector2 direction = (targetGridPosition - (Vector2)transform.position).normalized;
+
+            if (Mathf.Abs(targetGridPosition.x - transform.position.x) > Mathf.Abs(targetGridPosition.y - transform.position.y))
+            {
+                direction = new Vector2(Mathf.Sign(targetGridPosition.x - transform.position.x), 0);
+            }
+
+            else
+            {
+                direction = new Vector2(0, Mathf.Sign(targetGridPosition.y - transform.position.y));
+            }
+
+
+            Vector2 start = transform.position;
+            Vector2 end = start + direction * gridSize;
+            float elapsed = 0f;
+
+            while (elapsed < moveDuration)
+            {
+                elapsed += Time.deltaTime;
+                transform.position = Vector2.Lerp(start, end, elapsed / moveDuration);
+                yield return null;
+            }
+
+            transform.position = end;
+            SnapToGrid();
         }
 
-        transform.position = endPosition;
+        moveRoutine = null;
+    }
 
-        isMoving = false;
+    private void SnapToGrid()
+    {
+        float afgerondX = Mathf.Round(transform.position.x / gridSize) * gridSize;
+        float afgerondY = Mathf.Round(transform.position.y / gridSize) * gridSize;
+
+        transform.position = new Vector2(afgerondX, afgerondY);
     }
 }

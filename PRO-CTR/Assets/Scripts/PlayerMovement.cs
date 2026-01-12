@@ -1,116 +1,76 @@
 using System.Collections;
-using System.Runtime.CompilerServices;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 
-public class PlayerMovement : MonoBehaviour
+public class GridMovement : MonoBehaviour
 {
-    [SerializeField] private bool isRepeatedMovement = false;
     [SerializeField] private float moveDuration = 0.1f;
+    [SerializeField] private float gridSize = 1f;
 
-    [Header("Tilemap")]
-    [SerializeField] private Grid grid;
-    [SerializeField] private Tilemap groundTilemap;
-    [SerializeField] private Tilemap collisionTilemap;
+    private Vector2 targetGridPosition;
+    private Coroutine moveRoutine;
 
-    private bool isMoving = false;
-
-    bool up, down, right , left;
-
-    private void Awake()
+    private void Start()
     {
-        if (collisionTilemap == null)
-        {
-            collisionTilemap = GameObject.Find("CollisionTilemap")?.GetComponent<Tilemap>();
-        }
+        SnapToGrid();
+    }
 
-        if (grid == null)
+    private void Update()//update methodeee
+    {
+        if (Input.GetMouseButtonDown(0) && moveRoutine == null)
         {
-            grid = FindObjectOfType<Grid>();    
-        }
+            Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mouseWorld.z = 0f;
 
-        void Update()
+
+            float targetX = Mathf.Round(mouseWorld.x / gridSize) * gridSize;
+            float targetY = Mathf.Round(mouseWorld.y / gridSize) * gridSize;
+
+            targetGridPosition = new Vector2(targetX, targetY);
+
+            moveRoutine = StartCoroutine(MoveToTarget());
+        }
+    }
+
+    private IEnumerator MoveToTarget()
+    {
+        while ((Vector2)transform.position != targetGridPosition)
         {
-            if (isRepeatedMovement)
+            Vector2 direction = (targetGridPosition - (Vector2)transform.position).normalized;
+
+            if (Mathf.Abs(targetGridPosition.x - transform.position.x) > Mathf.Abs(targetGridPosition.y - transform.position.y))
             {
-                up = Input.GetKey(KeyCode.UpArrow);
-                down = Input.GetKey(KeyCode.DownArrow);
-                left = Input.GetKey(KeyCode.LeftArrow);
-                right = Input.GetKey(KeyCode.RightArrow);
+                direction = new Vector2(Mathf.Sign(targetGridPosition.x - transform.position.x), 0);
             }
+
             else
             {
-                up = Input.GetKey(KeyCode.UpArrow);
-                down = Input.GetKey(KeyCode.DownArrow);
-                left = Input.GetKey(KeyCode.LeftArrow);
-                right = Input.GetKey(KeyCode.RightArrow);
-
+                direction = new Vector2(0, Mathf.Sign(targetGridPosition.y - transform.position.y));
             }
 
-            Vector2Int direction = Vector2Int.zero;
 
-            if (up)
+            Vector2 start = transform.position;
+            Vector2 end = start + direction * gridSize;
+            float elapsed = 0f;
+
+            while (elapsed < moveDuration)
             {
-                direction = Vector2Int.up;
-            }
-            else if (down)
-            {
-                direction = Vector2Int.down;
-            }
-            else if (left)
-            {
-                direction = Vector2Int.left;
-            }
-            else if (right)
-            {
-                direction = Vector2Int.right;
+                elapsed += Time.deltaTime;
+                transform.position = Vector2.Lerp(start, end, elapsed / moveDuration);
+                yield return null;
             }
 
-            if (direction != Vector2Int.zero)
-            {
-                TryMove(direction);
-            }
-
-
+            transform.position = end;
+            SnapToGrid();
         }
+
+        moveRoutine = null;
     }
 
-    private void TryMove(Vector2Int direction)
+    private void SnapToGrid()
     {
-        Vector3Int currentCell = grid.WorldToCell(transform.position);
-        Vector3Int targetCell = currentCell + new Vector3Int(direction.x, direction.y, 0);
+        float afgerondX = Mathf.Round(transform.position.x / gridSize) * gridSize;
+        float afgerondY = Mathf.Round(transform.position.y / gridSize) * gridSize;
 
-        if (!groundTilemap != null && collisionTilemap.HasTile(targetCell))
-        {
-            return;
-        }
-
-        if (collisionTilemap != null && collisionTilemap.HasTile(targetCell))
-        {
-            return;
-        }
-
-        Vector3 targetWorldPosition = grid.GetCellCenterWorld(targetCell);
-        StartCoroutine(Move(targetWorldPosition));
-        
-
-    }
-    private IEnumerator Move(Vector3 targetPosition)
-    {
-        isMoving = true;
-
-        Vector3 startPosition = transform.position;
-        float elapsedTime = 0f;
-
-        while (elapsedTime < moveDuration)
-        {
-            elapsedTime += Time.deltaTime;
-            float t = elapsedTime / moveDuration;
-            transform.position = Vector3.Lerp(startPosition, targetPosition, t);
-            yield return null;
-        }
-
-        transform.position = targetPosition;
-        isMoving = false;
+        transform.position = new Vector2(afgerondX, afgerondY);
     }
 }

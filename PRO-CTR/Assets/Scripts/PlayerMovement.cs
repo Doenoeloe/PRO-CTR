@@ -14,7 +14,7 @@ public class GridMovement : MonoBehaviour
         SnapToGrid();
     }
 
-    private void Update()
+    private void Update()//update methodeee
     {
         if (Input.GetMouseButtonDown(0) && moveRoutine == null)
         {

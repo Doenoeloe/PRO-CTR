@@ -1,123 +1,65 @@
 using System.Collections;
-using System.Runtime.CompilerServices;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 
-public class PlayerMovement : MonoBehaviour
+public class GridMovement : MonoBehaviour
 {
     [SerializeField] private bool isRepeatedMovement = false;
     [SerializeField] private float moveDuration = 0.1f;
-
-    [Header("Tilemap")]
-    [SerializeField] private Grid grid;
-    [SerializeField] private Tilemap groundTilemap;
-    [SerializeField] private Tilemap collisionTilemap;
+    [SerializeField] private float gridSize = 1f;
 
     private bool isMoving = false;
 
-    bool up, down, right, left;
-
-    private void Awake()
+    private void Update()
     {
-        if (collisionTilemap == null)
+        if (!isMoving)
         {
-            collisionTilemap = GameObject.Find("CollisionTilemap")?.GetComponent<Tilemap>();
-        }
+            System.Func<KeyCode, bool> inputFunction;
+            if (isRepeatedMovement)
+            {
+                inputFunction = Input.GetKey;
+            }
+            else
+            {
+                inputFunction = Input.GetKeyDown;
+            }
 
-        if (grid == null)
-        {
-            grid = FindObjectOfType<Grid>();
+            if (inputFunction(KeyCode.UpArrow))
+            {
+                StartCoroutine(Move(Vector2.up));
+            }
+            else if (inputFunction(KeyCode.DownArrow))
+            {
+                StartCoroutine(Move(Vector2.down));
+            }
+            else if (inputFunction(KeyCode.LeftArrow))
+            {
+                StartCoroutine(Move(Vector2.left));
+            }
+            else if (inputFunction(KeyCode.RightArrow))
+            {
+                StartCoroutine(Move(Vector2.right));
+            }
         }
     }
 
-    private void Start()
-    {
-        Vector3Int cell = grid.WorldToCell(transform.position);
-        transform.position = grid.GetCellCenterWorld(cell);
-    }
-
-    void Update()
-    {
-        if (isRepeatedMovement)
-        {
-            up = Input.GetKey(KeyCode.UpArrow);
-            down = Input.GetKey(KeyCode.DownArrow);
-            left = Input.GetKey(KeyCode.LeftArrow);
-            right = Input.GetKey(KeyCode.RightArrow);
-        }
-        else
-        {
-            up = Input.GetKey(KeyCode.UpArrow);
-            down = Input.GetKey(KeyCode.DownArrow);
-            left = Input.GetKey(KeyCode.LeftArrow);
-            right = Input.GetKey(KeyCode.RightArrow);
-
-        }
-
-        Vector2Int direction = Vector2Int.zero;
-
-        if (up)
-        {
-            direction = Vector2Int.up;
-        }
-        else if (down)
-        {
-            direction = Vector2Int.down;
-        }
-        else if (left)
-        {
-            direction = Vector2Int.left;
-        }
-        else if (right)
-        {
-            direction = Vector2Int.right;
-        }
-
-        if (direction != Vector2Int.zero)
-        {
-            TryMove(direction);
-        }
-
-
-    }
-
-
-    private void TryMove(Vector2Int direction)
-    {
-        Vector3Int currentCell = grid.WorldToCell(transform.position);
-        Vector3Int targetCell = currentCell + new Vector3Int(direction.x, direction.y, 0);
-
-        if (!groundTilemap != null && collisionTilemap.HasTile(targetCell))
-        {
-            return;
-        }
-
-        if (collisionTilemap != null && collisionTilemap.HasTile(targetCell))
-        {
-            return;
-        }
-
-        Vector3 targetWorldPosition = grid.GetCellCenterWorld(targetCell);
-        StartCoroutine(Move(targetWorldPosition));
-
-
-    }
-    private IEnumerator Move(Vector3 targetPosition)
+    private IEnumerator Move(Vector2 direction)
     {
         isMoving = true;
-         
-        Vector3 startPosition = transform.position;
-        float elapsedTime = 0f;
 
+        Vector2 startPosition = transform.position;
+        Vector2 endPosition = startPosition + (direction * gridSize);
+
+        float elapsedTime = 0;
         while (elapsedTime < moveDuration)
         {
             elapsedTime += Time.deltaTime;
-            float t = elapsedTime / moveDuration;
-            transform.position = Vector3.Lerp(startPosition, targetPosition, t);
+            float percent = elapsedTime / moveDuration;
+            transform.position = Vector2.Lerp(startPosition, endPosition, percent);
             yield return null;
         }
 
-        transform.position = targetPosition;
+        transform.position = endPosition;
+
         isMoving = false;
     }
 }

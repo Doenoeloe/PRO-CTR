@@ -11,8 +11,8 @@ public class Projectile : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Debug.Log("Player Damage");
-            collision.GetComponent<PlayerMovement>().TakeDamage(damage);
-            Debug.Log($"Player Health: {collision.GetComponent<PlayerMovement>().DisplayHealthInfo()};");
+            collision.GetComponent<PlayerMovementMinigame>().TakeDamage(damage);
+            Debug.Log($"Player Health: {collision.GetComponent<PlayerMovementMinigame>().DisplayHealthInfo()};");
         }
     }
     public void Init(Vector3 pDir)

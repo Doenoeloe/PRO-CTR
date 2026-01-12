@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WaveManager : MonoBehaviour
 {
@@ -27,6 +28,10 @@ public class WaveManager : MonoBehaviour
                 player.GetComponent<PlayerMovement>().canMove = false;
                 WaveText.gameObject.SetActive(true);
                 WaveText.text = "Game Over";
+                StartCoroutine(Timer(2));
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                
+
             }
         }
     }
@@ -56,5 +61,9 @@ public class WaveManager : MonoBehaviour
 
         Vector2 direction = (player.transform.position - spawnPos).normalized;
         bullet.GetComponent<Projectile>().Init(direction);
+    }
+    IEnumerator Timer(float pSeconds)
+    {
+        yield return new WaitForSecondsRealtime(pSeconds);
     }
 }

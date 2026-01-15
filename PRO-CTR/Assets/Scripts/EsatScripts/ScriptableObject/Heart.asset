@@ -12,3 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15d3c4213cfcad54ca40cf9987e8cef0, type: 3}
   m_Name: Heart
   m_EditorClassIdentifier: Assembly-CSharp::UsableItemObject
+  itemName: 
+  itemDescription: 
+  itemSprite: {fileID: -205270267638800340, guid: 8c48ba58225b95c43b8e67bd96d997da, type: 3}
+  isItemKey: 0

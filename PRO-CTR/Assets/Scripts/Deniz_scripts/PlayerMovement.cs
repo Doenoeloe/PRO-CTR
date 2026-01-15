@@ -1,76 +1,132 @@
 using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class GridMovement : MonoBehaviour
+public enum MovementDirection
 {
-    [SerializeField] private float moveDuration = 0.1f;
-    [SerializeField] private float gridSize = 1f;
+    Up,
+    Down,
+    Left,
+    Right
+}
+public class PlayerMovement : MonoBehaviour
+{
+    [Header("Movement Settings")]
+    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private Vector2 gridSize = new Vector2(1f, 1f);
+    [SerializeField] private ObstacleTilemap obstacleTilemap;
+    [SerializeField] private TileSelection tileSelection;
 
-    private Vector2 targetGridPosition;
-    private Coroutine moveRoutine;
+    private Vector2 targetPosition;
+    private bool isMoving = false;
+    private MovementDirection currentDirection = MovementDirection.Down;
 
-    private void Start()
+    private void Awake()
     {
-        SnapToGrid();
-    }
+        obstacleTilemap = FindObjectOfType<ObstacleTilemap>();
+        tileSelection = FindObjectOfType<TileSelection>();
 
-    private void Update()//update methodeee
-    {
-        if (Input.GetMouseButtonDown(0) && moveRoutine == null)
+        if (obstacleTilemap == null || tileSelection == null)
         {
-            Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            mouseWorld.z = 0f;
-
-
-            float targetX = Mathf.Round(mouseWorld.x / gridSize) * gridSize;
-            float targetY = Mathf.Round(mouseWorld.y / gridSize) * gridSize;
-
-            targetGridPosition = new Vector2(targetX, targetY);
-
-            moveRoutine = StartCoroutine(MoveToTarget());
+            Debug.LogError("PlayerMovement: vereiste componenten ontbreken.");
+            enabled = false;
+            return;
         }
     }
 
-    private IEnumerator MoveToTarget()
+    private void Update()
     {
-        while ((Vector2)transform.position != targetGridPosition)
-        {
-            Vector2 direction = (targetGridPosition - (Vector2)transform.position).normalized;
+        HandleMovementInput();
+    }
 
-            if (Mathf.Abs(targetGridPosition.x - transform.position.x) > Mathf.Abs(targetGridPosition.y - transform.position.y))
+    private void HandleMovementInput()
+    {
+        if (!isMoving && Input.GetMouseButtonDown(0))
+        {
+            targetPosition = tileSelection.GetHighlightedTilePosition();
+            Vector2Int clickedTile = Gridtiles.WorldtoGrid(targetPosition);
+
+            if (!obstacleTilemap.IsTileObstacle(clickedTile))
             {
-                direction = new Vector2(Mathf.Sign(targetGridPosition.x - transform.position.x), 0);
+                if (targetPosition != Vector2.zero)
+                {
+                    FindPathToTargetPosition();
+                }
+
+            }
+        }
+        if (isMoving)
+        {
+            MoveTowardsTarget();
+        }
+    }
+
+    private void FindPathToTargetPosition()
+    {
+        Vector2 startPosition = Gridtiles.GridtoWorld(Gridtiles.WorldtoGrid(transform.position));
+        List<Vector2> path = AStar.FindPath(startPosition, targetPosition, gridSize, obstacleTilemap.IsTileObstacle);
+        if (path != null && path.Count > 0)
+        {
+            StartCoroutine(MoveAlongPath(path));
+
+        }
+    }
+
+    private IEnumerator MoveAlongPath(List<Vector2> path)
+    {
+        isMoving = true;
+        int currentWaypointIndex = 0;
+
+        while (currentWaypointIndex < path.Count)
+        {
+            targetPosition = path[currentWaypointIndex] + gridSize / 2f;
+
+            while ((Vector2)transform.position != targetPosition)
+            {
+                float step = moveSpeed * Time.fixedDeltaTime;
+                transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
+                yield return new WaitForFixedUpdate();
+            }
+
+            currentWaypointIndex++;
+        }
+
+        isMoving = false;
+
+    }
+
+    private void MoveTowardsTarget()
+    {
+
+        Vector2 direction = (targetPosition - (Vector2)transform.position).normalized;
+
+        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+        {
+            if (direction.x > 0)
+            {
+                currentDirection = MovementDirection.Right;
             }
 
             else
             {
-                direction = new Vector2(0, Mathf.Sign(targetGridPosition.y - transform.position.y));
+                currentDirection = MovementDirection.Left;
             }
 
-
-            Vector2 start = transform.position;
-            Vector2 end = start + direction * gridSize;
-            float elapsed = 0f;
-
-            while (elapsed < moveDuration)
+        }
+        else
+        {
+            if (direction.y > 0)
             {
-                elapsed += Time.deltaTime;
-                transform.position = Vector2.Lerp(start, end, elapsed / moveDuration);
-                yield return null;
+                currentDirection = MovementDirection.Up;
             }
 
-            transform.position = end;
-            SnapToGrid();
+            else
+            {
+                currentDirection = MovementDirection.Down;
+            }
+
         }
 
-        moveRoutine = null;
-    }
-
-    private void SnapToGrid()
-    {
-        float afgerondX = Mathf.Round(transform.position.x / gridSize) * gridSize;
-        float afgerondY = Mathf.Round(transform.position.y / gridSize) * gridSize;
-
-        transform.position = new Vector2(afgerondX, afgerondY);
     }
 }

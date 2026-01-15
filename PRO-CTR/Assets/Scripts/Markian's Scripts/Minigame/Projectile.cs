@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
@@ -20,10 +21,16 @@ public class Projectile : MonoBehaviour
     public void Init(Vector3 pDir)
     {
         direction = pDir;
+        StartCoroutine(WaitTillDestroy());
     }
     private void Update()
     {
         transform.position += (direction * speed * Time.deltaTime);
         Debug.Log(direction);
+    }
+    IEnumerator WaitTillDestroy()
+    {
+        yield return new WaitForSeconds(8);
+        Destroy(gameObject);
     }
 }

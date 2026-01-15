@@ -2,7 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+//actually Spawner
 public class WaveManager : MonoBehaviour
 {
     [SerializeField] GameObject Projectile_v1;
@@ -28,19 +28,41 @@ public class WaveManager : MonoBehaviour
                 player.GetComponent<PlayerMovementMinigame>().canMove = false;
                 WaveText.gameObject.SetActive(true);
                 WaveText.text = "Game Over";
-                StartCoroutine(Timer(2));
+                StartCoroutine(SceneChangeTimer(2));
                 
 
             }
         }
+        if (Input.GetKeyDown(KeyCode.F)){
+            SpawnProjectileWall();
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            StartCoroutine(SpawnCircle(5, 11));
+        }
     }
-    void SpawnProjectile(GameObject pProjectile, Vector2 pPos)
+    public void SpawnProjectileWall()
     {
-        GameObject Projectile = Instantiate(pProjectile, pPos, Quaternion.identity);
+        float spacing = 0.5f;
 
+        Vector3 centerPos = player.transform.position +
+                            (Vector3)Random.insideUnitCircle.normalized * spawnRadius;
+
+        Vector3 directionToPlayer = (player.transform.position - centerPos).normalized;
+        Vector3 perpendicular = Vector3.Cross(directionToPlayer, Vector3.forward);
+
+        for (int i = -2; i <= 2; i++)
+        {
+            Vector3 spawnPos = centerPos + perpendicular * i * spacing;
+
+            GameObject bullet = Instantiate(Projectile_v1, spawnPos, Quaternion.identity);
+            bullet.GetComponent<Projectile>().Init(directionToPlayer);
+        }
     }
-    IEnumerator SpawnCircle(GameObject pProjectile, Vector2 pPlayerPos, int pCount)
+
+    IEnumerator SpawnCircle(float pRadius, int pCount)
     {
+        Vector3 circleCentrum = player.transform.position;
         for (int i = 0; i < pCount; i++)
         {
             float angle = i * (360f / 16);
@@ -48,8 +70,11 @@ public class WaveManager : MonoBehaviour
                 Mathf.Cos(angle * Mathf.Deg2Rad),
                 Mathf.Sin(angle * Mathf.Deg2Rad)
             );
+            Vector3 spawnPos = circleCentrum + (Vector3)dir * pRadius;
+            GameObject bullet = Instantiate(Projectile_v1, spawnPos, Quaternion.identity);
+            yield return null;
+            bullet.GetComponent<Projectile>().Init(-dir);
         }
-        yield return null;
     }
     void RandomBulletSpawner()
     {
@@ -61,9 +86,10 @@ public class WaveManager : MonoBehaviour
         Vector2 direction = (player.transform.position - spawnPos).normalized;
         bullet.GetComponent<Projectile>().Init(direction);
     }
-    IEnumerator Timer(float pSeconds)
+    IEnumerator SceneChangeTimer(float pSeconds)
     {
         yield return new WaitForSecondsRealtime(pSeconds);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
 }

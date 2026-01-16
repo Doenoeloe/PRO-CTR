@@ -1,6 +1,8 @@
+using System;
+using Daniel_scripts;
 using UnityEngine;
 
-public class PlayerLogic : MonoBehaviour
+public class PlayerLogic : TurnActor
 {
     [HideInInspector] public AttackState attackState;
     [HideInInspector] public DefendState defendState;
@@ -9,7 +11,7 @@ public class PlayerLogic : MonoBehaviour
     
     PlayerTurnStates currentState;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         attackState = new AttackState(this);
         defendState = new DefendState(this);
@@ -25,10 +27,15 @@ public class PlayerLogic : MonoBehaviour
         currentState = newState;
         currentState.Enter();
     }
-    
-    // Update is called once per frame
-    void Update()
+    public void EndTurn()
     {
-        
+        enabled = false;
+        OnTurnFinished?.Invoke();
+        ChangeState(idleState);
+    }
+    public override void StartTurn()
+    {
+        enabled = true;
+        ChangeState(moveState);
     }
 }

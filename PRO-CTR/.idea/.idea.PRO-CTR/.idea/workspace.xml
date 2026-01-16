@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="729531e9-b5de-4c5e-867f-a30a39e40baf" name="Changes" comment="" />
+    <list default="true" id="729531e9-b5de-4c5e-867f-a30a39e40baf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PRO-CTR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PRO-CTR/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Deniz_scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Deniz_scripts/PlayerMovement.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -27,6 +33,11 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/PlayerTurnState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/OneDrive/Bureaublad/PRO-CTR/Assets/Scripts/Daniel scripts/PlayerLogic.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/OneDrive/Bureaublad/PRO-CTR/Assets/Scripts/Daniel scripts/PlayerTurnState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/OneDrive/Bureaublad/PRO-CTR/Assets/Scripts/Daniel scripts/States/MoveState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/OneDrive/Bureaublad/PRO-CTR/Assets/Scripts/Daniel scripts/TurnManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/OneDrive/Bureaublad/PRO-CTR/Assets/Scripts/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -37,20 +48,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Feat/Daniël",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "discord-application",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Feat/Daniël&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;discord-application&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.2f1\Editor\Unity.exe" />
@@ -110,6 +122,13 @@
       <workItem from="1768206606904" duration="15000" />
       <workItem from="1768206712963" duration="368000" />
       <workItem from="1768207160016" duration="510000" />
+      <workItem from="1768298848928" duration="3959000" />
+      <workItem from="1768392456046" duration="1150000" />
+      <workItem from="1768479887593" duration="245000" />
+      <workItem from="1768480162239" duration="14000" />
+      <workItem from="1768480275081" duration="4000" />
+      <workItem from="1768481422765" duration="7268000" />
+      <workItem from="1768566518973" duration="730000" />
     </task>
     <servers />
   </component>
@@ -125,5 +144,180 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/TurnManager.cs</url>
+          <line>27</line>
+          <properties documentPath="C:\School opdrachten\Github\PRO-CTR\PRO-CTR\Assets\Scripts\Daniel scripts\TurnManager.cs" containingFunctionPresentation="Method 'AdvanceTurn'">
+            <startOffsets>
+              <option value="547" />
+            </startOffsets>
+            <endOffsets>
+              <option value="565" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/TurnManager.cs</url>
+          <line>28</line>
+          <properties documentPath="C:\School opdrachten\Github\PRO-CTR\PRO-CTR\Assets\Scripts\Daniel scripts\TurnManager.cs" containingFunctionPresentation="Method 'AdvanceTurn'">
+            <startOffsets>
+              <option value="574" />
+            </startOffsets>
+            <endOffsets>
+              <option value="619" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/TurnManager.cs</url>
+          <line>29</line>
+          <properties documentPath="C:\School opdrachten\Github\PRO-CTR\PRO-CTR\Assets\Scripts\Daniel scripts\TurnManager.cs" containingFunctionPresentation="Method 'AdvanceTurn'">
+            <startOffsets>
+              <option value="628" />
+            </startOffsets>
+            <endOffsets>
+              <option value="659" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/TurnManager.cs</url>
+          <line>30</line>
+          <properties documentPath="C:\School opdrachten\Github\PRO-CTR\PRO-CTR\Assets\Scripts\Daniel scripts\TurnManager.cs" containingFunctionPresentation="Method 'AdvanceTurn'">
+            <startOffsets>
+              <option value="668" />
+            </startOffsets>
+            <endOffsets>
+              <option value="679" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/TurnManager.cs</url>
+          <line>22</line>
+          <properties documentPath="C:\School opdrachten\Github\PRO-CTR\PRO-CTR\Assets\Scripts\Daniel scripts\TurnManager.cs" containingFunctionPresentation="Method 'Start'">
+            <startOffsets>
+              <option value="491" />
+            </startOffsets>
+            <endOffsets>
+              <option value="502" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/TurnManager.cs</url>
+          <line>21</line>
+          <properties documentPath="C:\School opdrachten\Github\PRO-CTR\PRO-CTR\Assets\Scripts\Daniel scripts\TurnManager.cs" containingFunctionPresentation="Method 'Start'">
+            <startOffsets>
+              <option value="451" />
+            </startOffsets>
+            <endOffsets>
+              <option value="482" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/TurnManager.cs</url>
+          <line>15</line>
+          <properties documentPath="C:\School opdrachten\Github\PRO-CTR\PRO-CTR\Assets\Scripts\Daniel scripts\TurnManager.cs" containingFunctionPresentation="Method 'Start'">
+            <startOffsets>
+              <option value="302" />
+            </startOffsets>
+            <endOffsets>
+              <option value="337" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/TurnManager.cs</url>
+          <line>17</line>
+          <properties documentPath="C:\School opdrachten\Github\PRO-CTR\PRO-CTR\Assets\Scripts\Daniel scripts\TurnManager.cs" containingFunctionPresentation="Method 'Start'">
+            <startOffsets>
+              <option value="360" />
+            </startOffsets>
+            <endOffsets>
+              <option value="382" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/TurnManager.cs</url>
+          <line>18</line>
+          <properties documentPath="C:\School opdrachten\Github\PRO-CTR\PRO-CTR\Assets\Scripts\Daniel scripts\TurnManager.cs" containingFunctionPresentation="Method 'Start'">
+            <startOffsets>
+              <option value="395" />
+            </startOffsets>
+            <endOffsets>
+              <option value="431" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/PlayerLogic.cs</url>
+          <line>31</line>
+          <properties documentPath="C:\School opdrachten\Github\PRO-CTR\PRO-CTR\Assets\Scripts\Daniel scripts\PlayerLogic.cs" containingFunctionPresentation="Method 'EndTurn'">
+            <startOffsets>
+              <option value="887" />
+            </startOffsets>
+            <endOffsets>
+              <option value="903" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/PlayerLogic.cs</url>
+          <line>32</line>
+          <properties documentPath="C:\School opdrachten\Github\PRO-CTR\PRO-CTR\Assets\Scripts\Daniel scripts\PlayerLogic.cs" containingFunctionPresentation="Method 'EndTurn'">
+            <startOffsets>
+              <option value="912" />
+            </startOffsets>
+            <endOffsets>
+              <option value="937" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/PlayerLogic.cs</url>
+          <line>33</line>
+          <properties documentPath="C:\School opdrachten\Github\PRO-CTR\PRO-CTR\Assets\Scripts\Daniel scripts\PlayerLogic.cs" containingFunctionPresentation="Method 'EndTurn'">
+            <startOffsets>
+              <option value="946" />
+            </startOffsets>
+            <endOffsets>
+              <option value="969" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/PlayerLogic.cs</url>
+          <line>38</line>
+          <properties documentPath="C:\School opdrachten\Github\PRO-CTR\PRO-CTR\Assets\Scripts\Daniel scripts\PlayerLogic.cs" containingFunctionPresentation="Method 'StartTurn'">
+            <startOffsets>
+              <option value="1051" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1074" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

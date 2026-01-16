@@ -5,15 +5,20 @@ using UnityEngine.SceneManagement;
 //actually Spawner
 public class WaveManager : MonoBehaviour
 {
+    //Projectile prefab
     [SerializeField] GameObject Projectile_v1;
+    //UI Text for wave info
     [SerializeField] TextMeshProUGUI WaveText;
     GameObject player;
-
+    //spawn radius from player
     float spawnRadius = 10.0f;
+    //time between spawns
     float spawnPediod = 0.75f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //Invoke  a timer for game over after 60 seconds
+        StartCoroutine(GameOverTimer(60));
         player = GameObject.FindGameObjectWithTag("Player");
         InvokeRepeating(nameof(RandomBulletSpawner), 3.5f, spawnPediod);
     }
@@ -23,6 +28,7 @@ public class WaveManager : MonoBehaviour
     {
         if (player != null)
         {
+            //Check if player is alive
             if (!player.GetComponent<PlayerMovementMinigame>().isAlive)
             {
                 player.GetComponent<PlayerMovementMinigame>().canMove = false;
@@ -33,16 +39,20 @@ public class WaveManager : MonoBehaviour
 
             }
         }
+        //Debug key to spawn projectile wall
         if (Input.GetKeyDown(KeyCode.F)){
             SpawnProjectileWall();
         }
+        //Debug key to spawn circle of projectiles
         if (Input.GetKeyDown(KeyCode.E))
         {
             StartCoroutine(SpawnCircle(5, 11));
         }
     }
+    //Spawns a wall of projectiles aimed at the player
     public void SpawnProjectileWall()
     {
+        //space between projectiles
         float spacing = 0.5f;
 
         Vector3 centerPos = player.transform.position +
@@ -51,7 +61,7 @@ public class WaveManager : MonoBehaviour
         Vector3 directionToPlayer = (player.transform.position - centerPos).normalized;
         Vector3 perpendicular = Vector3.Cross(directionToPlayer, Vector3.forward);
 
-        for (int i = -2; i <= 2; i++)
+        for (int i = 0; i <= 4; i++)
         {
             Vector3 spawnPos = centerPos + perpendicular * i * spacing;
 
@@ -90,6 +100,18 @@ public class WaveManager : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(pSeconds);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    IEnumerator GameOverTimer(float pSeconds)
+    {
+        yield return new WaitForSecondsRealtime(pSeconds);
+        if (player.GetComponent<PlayerMovementMinigame>().isAlive)
+        {
+            WaveText.gameObject.SetActive(true);
+            WaveText.text = "Nice! You have defended yourself.";
+            yield return new WaitForSecondsRealtime(3);
+            //Here you can add more code for what happens after winning(variable "hasDefended" and switch to another scene);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
 }

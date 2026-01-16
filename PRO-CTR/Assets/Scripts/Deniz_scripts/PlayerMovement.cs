@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,6 +23,9 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 targetPosition;
     private bool isMoving = false;
     private MovementDirection currentDirection = MovementDirection.Down;
+    
+    public bool CanMove { get; set; }
+    public Action OnMoveFinished;
 
     private void Awake()
     {
@@ -55,6 +59,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleMovementInput()
     {
+        if (!CanMove) return;
+        
         if (!isMoving && Input.GetMouseButtonDown(0))
         {
             targetPosition = tileSelection.GetHighlightedTilePosition();
@@ -120,6 +126,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         isMoving = false;
+        OnMoveFinished?.Invoke();
     }
 
 

@@ -17,10 +17,10 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Pet
+  - Ground
+  - Wall
+  - PetAccesibleWall
   - 
   - 
   - 

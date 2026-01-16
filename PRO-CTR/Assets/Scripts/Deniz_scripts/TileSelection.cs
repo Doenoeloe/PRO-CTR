@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using System.Collections.Generic;
 
 public class TileSelection : MonoBehaviour
 {
     [SerializeField] private Tilemap tilemap;
-    [SerializeField] private Tilemap obstacleTilemap;
+    [SerializeField] private List<Tilemap> obstacleTilemaps;
     [SerializeField] private float offset = 0.5f;
     [SerializeField] private Vector2 gridSize = new Vector2(1f, 1f);
 
@@ -16,32 +17,32 @@ public class TileSelection : MonoBehaviour
         Vector2Int gridPos = new Vector2Int(
             Mathf.FloorToInt(mouseWorldPos.x / gridSize.x) * Mathf.RoundToInt(gridSize.x),
             Mathf.FloorToInt(mouseWorldPos.y / gridSize.y) * Mathf.RoundToInt(gridSize.y)
-            );
+        );
 
         bool isObstacleTile = false;
-        if (obstacleTilemap != null)
+
+        if (obstacleTilemaps != null && obstacleTilemaps.Count > 0)
         {
-            Vector3Int cellPos = obstacleTilemap.WorldToCell(mouseWorldPos);
-            if (obstacleTilemap.HasTile(cellPos) && obstacleTilemap.GetTile(cellPos) != null)
+            foreach (var obstacleTilemap in obstacleTilemaps)
             {
-                isObstacleTile = true;
-
+                Vector3Int cellPos = obstacleTilemap.WorldToCell(mouseWorldPos);
+                if (obstacleTilemap.HasTile(cellPos) && obstacleTilemap.GetTile(cellPos) != null)
+                {
+                    isObstacleTile = true;
+                    break;
+                }
             }
+        }
 
-            if (!isObstacleTile)
-            {
-                highlightedTilePosition = gridPos;
-                Vector2 worldPos = Gridtiles.GridtoWorld(gridPos) + new Vector2(offset, offset);
-                transform.position = worldPos;
-            }
+        if (!isObstacleTile)
+        {
+            highlightedTilePosition = gridPos;
+            Vector2 worldPos = Gridtiles.GridtoWorld(gridPos) + new Vector2(offset, offset);
+            transform.position = worldPos;
         }
     }
 
-
-    public Vector2Int HighlightedTilePosition
-    {
-        get { return highlightedTilePosition; }
-    }
+    public Vector2Int HighlightedTilePosition => highlightedTilePosition;
 
     public bool IsHighlightedTileClicked(Vector2 clickedPosition)
     {
@@ -56,14 +57,9 @@ public class TileSelection : MonoBehaviour
 
     public bool IsTileObstacle(Vector2Int position)
     {
-        Vector3 worldPosition = Gridtiles.GridtoWorld(position); 
+        Vector3 worldPosition = Gridtiles.GridtoWorld(position);
         RaycastHit2D hit = Physics2D.Raycast(worldPosition, Vector2.zero);
 
-        if(hit.collider != null)
-        {
-            return true;
-        }
-
-        return false;
+        return hit.collider != null;
     }
 }

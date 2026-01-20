@@ -2,20 +2,27 @@ using UnityEngine;
 
 public class MoveState : PlayerTurnStates
 {
-    public MoveState (PlayerLogic player) : base(player){}
+    PlayerMovement playerMovement;
+
+    public MoveState(PlayerLogic player) : base(player)
+    {
+        this.player = player;
+        playerMovement = player.GetComponent<PlayerMovement>();
+    }
 
     public override void Enter()
     {
-        
-    }
-
-    public override void Tick()
-    {
-        
+        playerMovement.CanMove = true;
+        playerMovement.OnMoveFinished += HandleMoveFinished;
     }
 
     public override void Exit()
     {
-        
+        playerMovement.CanMove = false;
+        playerMovement.OnMoveFinished -= HandleMoveFinished;
+    }
+    private void HandleMoveFinished()
+    {
+        player.EndTurn(); // or ChangeState(AttackState) if you want phases
     }
 }

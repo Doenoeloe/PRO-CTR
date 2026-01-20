@@ -1,17 +1,21 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Daniel_scripts
 {
     public class EnemyLogic : TurnActor
     {
         [SerializeField] private EnemyMovement movement;
+        private float totalHealth = 50;
+        [SerializeField] private Slider healthSlider;
 
         private void Awake()
         {
             if (movement == null)
                 movement = GetComponent<EnemyMovement>();
 
-            movement.OnMoveFinished += EndTurn;
+            if (movement != null)
+                movement.OnMoveFinished += EndTurn;
         }
 
         public override void StartTurn()
@@ -24,6 +28,13 @@ namespace Daniel_scripts
         {
             OnTurnFinished?.Invoke();
             enabled = false;
+        }
+
+        public void TakeDamage(float damage)
+        {
+            totalHealth -= damage;
+            healthSlider.value = totalHealth;
+            Debug.Log(totalHealth);
         }
     }
 }

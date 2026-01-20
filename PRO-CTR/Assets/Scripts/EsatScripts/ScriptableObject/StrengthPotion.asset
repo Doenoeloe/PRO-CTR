@@ -15,5 +15,5 @@ MonoBehaviour:
   itemName: Strength Potion
   itemDescription: Drink this potion when you want to deal more damage in your current
     or next fight.
-  itemSprite: {fileID: 0}
+  itemSprite: {fileID: 3962230621773985608, guid: 3dbe9a82b5eb0624793b6eb04e3e996d, type: 3}
   isItemKey: 0

@@ -394,8 +394,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0253fbf20989ec4b97f73255e52b45c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GridMovement
-  moveDuration: 0.1
-  gridSize: 1
+  moveSpeed: 5
+  gridSize: {x: 1, y: 1}
+  obstacleTilemap: {fileID: 0}
+  petOnlyWall: {fileID: 0}
+  tileSelection: {fileID: 0}
 --- !u!1 &481408983
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,8 +865,9 @@ GameObject:
   - component: {fileID: 1145288828}
   - component: {fileID: 1145288827}
   - component: {fileID: 1145288826}
+  - component: {fileID: 1145288829}
   m_Layer: 0
-  m_Name: HeartItem
+  m_Name: HeartPotionObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -881,7 +885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1326694ad4feec64696a488226930711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  itemData: {fileID: 11400000, guid: 0ca07fea1875e1a48ac76d7892a02db5, type: 2}
+  itemData: {fileID: 11400000, guid: 4314959eb3418fc47a559d3e8ce93dc6, type: 2}
 --- !u!212 &1145288827
 SpriteRenderer:
   serializedVersion: 2
@@ -950,12 +954,48 @@ Transform:
   m_GameObject: {fileID: 1145288825}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03158, y: -0.48778, z: 0}
+  m_LocalPosition: {x: -1.5, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1145288829
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145288825}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.2
 --- !u!1 &1163495696
 GameObject:
   m_ObjectHideFlags: 0

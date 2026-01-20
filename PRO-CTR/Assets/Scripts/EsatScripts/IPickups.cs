@@ -1,5 +1,4 @@
-using TMPro;
-using UnityEngine.UI;
+using UnityEngine;
 
 public interface IPickups
 {
@@ -7,11 +6,11 @@ public interface IPickups
 
     string itemDescription { get; set; }
 
-    Image itemSprite { get; set; }
+    Sprite itemSprite { get; set; }
 
     bool isItemKey { get; set; }
 
     void PickUpItem();
 
-    void RemoveItemFromInventory();
+    //void RemoveItemFromInventory();
 }

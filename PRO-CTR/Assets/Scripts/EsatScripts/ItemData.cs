@@ -13,8 +13,4 @@ public class ItemData : ScriptableObject
 
     public bool isItemKey;
     
-    public void isItemKeyCheck()
-    {
-        if (itemName.ToLower().Contains("key")) isItemKey = true;
-    }
 }

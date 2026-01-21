@@ -56,6 +56,16 @@ public class Item : MonoBehaviour, IPickups
     public void PickUpItem()
     {
         Debug.Log("Picked up: " + itemName);
+
         Destroy(gameObject);
+    }
+
+    public void UseItem()
+    {
+        switch (itemName) 
+        {
+            case "health potion":
+                break;
+        }
     }
 }

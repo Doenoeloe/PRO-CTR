@@ -12,5 +12,7 @@ public interface IPickups
 
     void PickUpItem();
 
+    void UseItem();
+
     //void RemoveItemFromInventory();
 }

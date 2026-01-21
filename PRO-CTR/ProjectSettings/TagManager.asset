@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - SkillCheck
   layers:
   - Default
   - TransparentFX
@@ -15,8 +16,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Player
+  - Enemy
   - Pet
   - Ground
   - Wall

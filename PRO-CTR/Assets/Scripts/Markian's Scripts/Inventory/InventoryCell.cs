@@ -1,26 +1,36 @@
-//using TMPro;
-//using UnityEngine;
-//using UnityEngine.EventSystems;
-//using UnityEngine.UI;
+using UnityEngine;
+using UnityEngine.EventSystems;
+// InventoryCell class to handle individual inventory cell interactions
+public class InventoryCell : MonoBehaviour, IPointerExitHandler, IPointerEnterHandler, IPointerClickHandler
+{
+    Infopanel infoPanel;
+    TemplateItem item;
+    // Assign the item and infopanel to this cell
+    public void AssignCell(TemplateItem pItem, Infopanel pInfopanel)
+    {
+        infoPanel = pInfopanel;
+        item = pItem;
+    }
+    // Show item details on pointer enter
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        infoPanel.DisplayDetails(item);
+    }
+    // Hide item details on pointer exit
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        if (infoPanel.GetComponent<Infopanel>().isItemSelected)
+        {
+            infoPanel.LoadSelection();
+        }
+        else
+        {
+            infoPanel.HideDetails();
+        }
 
-//public class InventoryCell : MonoBehaviour, IPointerExitHandler, IPointerEnterHandler
-//{
-//    Infopanel infoPanel;
-//    Item item;
-//    public void AssignCell(Item pItem, Infopanel pInfopanel)
-//    {
-//        infoPanel = pInfopanel;
-//        item = pItem;
-//    }
-
-//    public void OnPointerEnter(PointerEventData eventData)
-//    {
-//        Infopanel.DisplayDetails(item);
-//        throw new System.NotImplementedException();
-//    }
-//    public void OnPointerExit(PointerEventData eventData)
-//    {
-//        Infopanel.HideDetails(item);
-//        throw new System.NotImplementedException();
-//    }
-//}
+    }
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        infoPanel.SaveSelection(item);
+    }
+}

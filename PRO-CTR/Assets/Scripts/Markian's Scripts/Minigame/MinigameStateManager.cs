@@ -1,43 +1,83 @@
+using System.Collections;
 using UnityEngine;
 public class MinigameStateManager : MonoBehaviour
 {
-    public enum PhaseStates
-    {
-        Start,
-        FirstWave,
-        SecondWave,
-        FinalWave,
-        End
-    }
-    void EnterState(PhaseStates state)
-    {
-        switch (state)
-        {
-            case PhaseStates.Start:
-                //start a countdown;
-                //spawn a player;
-                break;
-            case PhaseStates.FirstWave:
-                //SpawnRandom bullets method;
-                //Spawn 3 times a bullet walls;
-                    break;
-            case PhaseStates.SecondWave:
-                //spawn Random bullets for about 10 seconds
-                //Spawn a circle of bullets and each bullet with period of 0.5 seconds launches to the player;
-                //Spawn Lazerblades that will shoot after 2 seconds;
-                break;
-            case PhaseStates.FinalWave:
-                //spawn Random bullets for about 10 seconds
-                //Spawn a circle of bullets and each bullet with period of 0.5 seconds launches to the player;
-                //Walls become closer to player;
-                //Lazerblades;
+    GameObject player;
+    WaveState CurrentState;
+    [SerializeField] WaveLogic waveManager;
+    public WaveLogic WaveManager => waveManager;
+    public StartWaveState StartWaveState { get; private set; }
+    public FirstWaveState FirstWaveState { get; private set; }
+    public SecondWaveState SecondWaveState { get; private set; }
+    public FinalWaveState FinalWaveState { get; private set; }
+    public WinWaveState WinWaveState { get; private set; }
+    public LoseWaveState LoseWaveState { get; private set; }
 
-                break;
-            case PhaseStates.End:
-                //Message like:"Nice" 
-                //Switch scene;
-                break;
+    Coroutine _waveSequenceCoroutine;
+
+    private void Awake()
+    {
+        if (waveManager == null)
+        {
+            waveManager = FindAnyObjectByType<WaveLogic>();
         }
+        StartWaveState = new StartWaveState(this);
+        FirstWaveState = new FirstWaveState(this);
+        SecondWaveState = new SecondWaveState(this);
+        FinalWaveState = new FinalWaveState(this);
+        WinWaveState = new WinWaveState(this);
+        LoseWaveState = new LoseWaveState(this);
     }
-    void ExitState(PhaseStates state) { }
+    void Start()
+    {
+        player = GameObject.FindWithTag("Player");
+
+        // use the pre-created StartWaveState instance instead of new'ing another one
+        CurrentState = StartWaveState;
+        CurrentState.Enter();
+
+        // Start the wave sequence and keep the Coroutine handle so we can stop it later
+        _waveSequenceCoroutine = StartCoroutine(RunWavesSequence());
+    }
+    void Update()
+    {
+        CurrentState.Update();
+        if (!player.GetComponent<PlayerMovementMinigame>().isAlive)
+        {
+            // stop the running sequence properly using the stored handle
+            if (_waveSequenceCoroutine != null)
+            {
+                StopCoroutine(_waveSequenceCoroutine);
+                _waveSequenceCoroutine = null;
+            }
+
+            ChangeState(LoseWaveState);
+        }
+        Debug.Log(CurrentState.GetType().Name);
+    }
+    public void ChangeState(WaveState newState)
+    {
+        if (newState == null) return;
+        CurrentState.Exit();
+        CurrentState = newState;
+        CurrentState.Enter();
+    }
+    IEnumerator RunWavesSequence()
+    {
+        // Wait 3 seconds then switch to first wave
+        yield return new WaitForSeconds(3f);
+        ChangeState(FirstWaveState);
+
+        // Wait next 30 seconds (3 -> 33) then second wave
+        yield return new WaitForSeconds(30f);
+        ChangeState(SecondWaveState);
+
+        // Wait next 30 seconds (33 -> 63) then final wave
+        yield return new WaitForSeconds(30f);
+        ChangeState(FinalWaveState);
+
+        // Wait next 30 seconds (63 -> 93) then end
+        yield return new WaitForSeconds(30f);
+        ChangeState(WinWaveState);
+    }
 }

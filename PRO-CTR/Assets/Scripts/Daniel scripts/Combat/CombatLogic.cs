@@ -29,6 +29,9 @@ public class CombatLogic : MonoBehaviour
     [SerializeField] private Sprite chargeSprite;
     [SerializeField] private Sprite criticalSprite;
 
+    [SerializeField] private GameObject combatActionUI;
+    [SerializeField] private PlayerLogic playerLogic;
+    [SerializeField] private EnemyLogic enemyLogic;
     private enum TurnState
     {
         PlayerTurn,
@@ -235,6 +238,7 @@ public class CombatLogic : MonoBehaviour
         if (playerWon)
         {
             Debug.Log("Player won!");
+            combatActionUI.SetActive(false);
             // Show victory screen, give rewards, return to overworld
         }
         else

@@ -7,7 +7,8 @@ namespace Daniel_scripts
     {
         [SerializeField] private EnemyMovement movement;
         private float totalHealth = 50;
-        [SerializeField] private Slider healthSlider;
+        
+        
 
         private void Awake()
         {
@@ -28,13 +29,6 @@ namespace Daniel_scripts
         {
             OnTurnFinished?.Invoke();
             enabled = false;
-        }
-
-        public void TakeDamage(float damage)
-        {
-            totalHealth -= damage;
-            healthSlider.value = totalHealth;
-            Debug.Log(totalHealth);
         }
     }
 }

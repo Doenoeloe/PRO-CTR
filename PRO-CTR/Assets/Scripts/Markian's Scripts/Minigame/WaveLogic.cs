@@ -3,51 +3,24 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 //actually Spawner
-public class WaveManager : MonoBehaviour
+public class WaveLogic : MonoBehaviour
 {
     //Projectile prefab
     [SerializeField] GameObject Projectile_v1;
     //UI Text for wave info
     [SerializeField] TextMeshProUGUI WaveText;
+    //Reference to player
     GameObject player;
+    //radius of circle spawn
+    float circleRadius = 5.0f;
+    //number of projectiles in circle
+    int circleProjectilesAmmount = 16;
     //spawn radius from player
     float spawnRadius = 10.0f;
-    //time between spawns
-    float spawnPediod = 0.75f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //Invoke  a timer for game over after 60 seconds
-        StartCoroutine(GameOverTimer(60));
         player = GameObject.FindGameObjectWithTag("Player");
-        InvokeRepeating(nameof(RandomBulletSpawner), 3.5f, spawnPediod);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (player != null)
-        {
-            //Check if player is alive
-            if (!player.GetComponent<PlayerMovementMinigame>().isAlive)
-            {
-                player.GetComponent<PlayerMovementMinigame>().canMove = false;
-                WaveText.gameObject.SetActive(true);
-                WaveText.text = "Game Over";
-                StartCoroutine(SceneChangeTimer(2));
-                
-
-            }
-        }
-        //Debug key to spawn projectile wall
-        if (Input.GetKeyDown(KeyCode.F)){
-            SpawnProjectileWall();
-        }
-        //Debug key to spawn circle of projectiles
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            StartCoroutine(SpawnCircle(5, 11));
-        }
     }
     //Spawns a wall of projectiles aimed at the player
     public void SpawnProjectileWall()
@@ -55,8 +28,7 @@ public class WaveManager : MonoBehaviour
         //space between projectiles
         float spacing = 0.5f;
 
-        Vector3 centerPos = player.transform.position +
-                            (Vector3)Random.insideUnitCircle.normalized * spawnRadius;
+        Vector3 centerPos = player.transform.position + (Vector3)Random.insideUnitCircle.normalized * spawnRadius;
 
         Vector3 directionToPlayer = (player.transform.position - centerPos).normalized;
         Vector3 perpendicular = Vector3.Cross(directionToPlayer, Vector3.forward);
@@ -69,24 +41,24 @@ public class WaveManager : MonoBehaviour
             bullet.GetComponent<Projectile>().Init(directionToPlayer);
         }
     }
-
-    IEnumerator SpawnCircle(float pRadius, int pCount)
+    //Spawns a circle of projectiles around player aimed outwards
+    public IEnumerator SpawnCircle()
     {
         Vector3 circleCentrum = player.transform.position;
-        for (int i = 0; i < pCount; i++)
+        for (int i = 0; i < circleProjectilesAmmount; i++)
         {
             float angle = i * (360f / 16);
             Vector2 dir = new Vector2(
                 Mathf.Cos(angle * Mathf.Deg2Rad),
-                Mathf.Sin(angle * Mathf.Deg2Rad)
-            );
-            Vector3 spawnPos = circleCentrum + (Vector3)dir * pRadius;
+                Mathf.Sin(angle * Mathf.Deg2Rad));
+            Vector3 spawnPos = circleCentrum + (Vector3)dir * circleRadius;
             GameObject bullet = Instantiate(Projectile_v1, spawnPos, Quaternion.identity);
             yield return null;
             bullet.GetComponent<Projectile>().Init(-dir);
         }
     }
-    void RandomBulletSpawner()
+    //Spawns a projectile at random position around player aimed at player
+    public void RandomBulletSpawner()
     {
         Vector3 randomOffset = Random.insideUnitCircle * spawnRadius;
         Vector3 spawnPos = player.transform.position + randomOffset;
@@ -96,21 +68,34 @@ public class WaveManager : MonoBehaviour
         Vector2 direction = (player.transform.position - spawnPos).normalized;
         bullet.GetComponent<Projectile>().Init(direction);
     }
-    IEnumerator SceneChangeTimer(float pSeconds)
+    //Timer for game over after defending for certain time
+    public IEnumerator DisplayEndGameMessage(float pSeconds)
     {
         yield return new WaitForSecondsRealtime(pSeconds);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-    IEnumerator GameOverTimer(float pSeconds)
-    {
-        yield return new WaitForSecondsRealtime(pSeconds);
+        WaveText.gameObject.SetActive(true);
         if (player.GetComponent<PlayerMovementMinigame>().isAlive)
         {
-            WaveText.gameObject.SetActive(true);
             WaveText.text = "Nice! You have defended yourself.";
-            yield return new WaitForSecondsRealtime(3);
-            //Here you can add more code for what happens after winning(variable "hasDefended" and switch to another scene);
+        }
+        else
+        {
+            WaveText.text = "Loser";
+
+        }
+        yield return new WaitForSecondsRealtime(3);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public IEnumerator StartGameCountDown(int pSeconds)
+    {
+        for (int i = pSeconds; i >= 0; i--)
+        {
+            if (i == 0)
+            {
+                WaveText.gameObject.SetActive(false);
+                player.GetComponent<PlayerMovementMinigame>().canMove = true;
+            }
+            WaveText.text = i.ToString();
+            yield return new WaitForSeconds(1f);
         }
     }
 

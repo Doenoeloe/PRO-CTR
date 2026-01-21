@@ -6,20 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="729531e9-b5de-4c5e-867f-a30a39e40baf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PRO-CTR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PRO-CTR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/bell-mt SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/bell-mt SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DoenoeloeScene/CombatScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DoenoeloeScene/CombatScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DoenoeloeScene/DoenoeloeScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DoenoeloeScene/DoenoeloeScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main_Menu_Ruben.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main_Menu_Ruben.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/Combat/CombatLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/Combat/CombatLogic.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/EnemyLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/EnemyLogic.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/TurnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/TurnManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Deniz_scripts/AStar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Deniz_scripts/AStar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sjablonen/Sjablonen (Daniel)/B1K2W1 (template) -  Log - Week 3.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Sjablonen/Sjablonen (Daniel)/B1K2W1 (template) -  Log - Week 3.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +40,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/PlayerTurnState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/493b407efcb64dddad59f28bb0b831d3212400/f7/d41bc1c0/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -142,6 +137,9 @@
       <workItem from="1768568768485" duration="249000" />
       <workItem from="1768812541247" duration="14440000" />
       <workItem from="1768896526258" duration="7761000" />
+      <workItem from="1768997652940" duration="868000" />
+      <workItem from="1768998550496" duration="6000" />
+      <workItem from="1768999340102" duration="5166000" />
     </task>
     <servers />
   </component>
@@ -155,6 +153,17 @@
     <option name="unityProjectFolder" value="true" />
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

@@ -268,7 +268,6 @@ GameObject:
   - component: {fileID: 834604119}
   - component: {fileID: 834604121}
   - component: {fileID: 834604120}
-  - component: {fileID: 834604122}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -395,18 +394,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834604118}
   m_CullTransparentMesh: 1
---- !u!114 &834604122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 834604118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c54d28c6197274499931acb23f45e9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Countdown
 --- !u!1 &1053262718
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,6 +483,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1060632947}
   - component: {fileID: 1060632946}
+  - component: {fileID: 1060632948}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -532,6 +520,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1060632948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060632945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ebbec63b24d7b54d94ada144e5f7cd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MinigameStateManager
+  waveManager: {fileID: 1060632946}
 --- !u!1 &1107604465
 GameObject:
   m_ObjectHideFlags: 0

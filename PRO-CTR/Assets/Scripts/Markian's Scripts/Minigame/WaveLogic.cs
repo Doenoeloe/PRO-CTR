@@ -80,7 +80,6 @@ public class WaveLogic : MonoBehaviour
         else
         {
             WaveText.text = "Loser";
-
         }
         yield return new WaitForSecondsRealtime(3);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

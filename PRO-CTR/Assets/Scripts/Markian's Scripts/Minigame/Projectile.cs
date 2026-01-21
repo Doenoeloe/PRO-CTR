@@ -12,10 +12,7 @@ public class Projectile : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Player Damage");
             collision.GetComponent<PlayerMovementMinigame>().TakeDamage(damage);
-            collision.GetComponent<PlayerMovementMinigame>().ApplyKnockBack(knockbackForce, -direction);
-            Debug.Log($"Player Health: {collision.GetComponent<PlayerMovementMinigame>().DisplayHealthInfo()};");
         }
     }
     public void Init(Vector3 pDir)
@@ -26,7 +23,6 @@ public class Projectile : MonoBehaviour
     private void Update()
     {
         transform.position += (direction * speed * Time.deltaTime);
-        Debug.Log(direction);
     }
     IEnumerator WaitTillDestroy()
     {

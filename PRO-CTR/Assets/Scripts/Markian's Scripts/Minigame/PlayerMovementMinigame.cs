@@ -1,4 +1,3 @@
-using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
 public class PlayerMovementMinigame : MonoBehaviour
@@ -19,7 +18,10 @@ public class PlayerMovementMinigame : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        MovePlayer();
+        if (isAlive)
+        {
+            MovePlayer();
+        }
     }
     void MovePlayer()
     {
@@ -35,15 +37,13 @@ public class PlayerMovementMinigame : MonoBehaviour
         healthPoints -= damage;
         if (healthPoints < 80)
         {
+
             isAlive = false;
+            canMove = false;
         }
     }
     public float DisplayHealthInfo()
     {
         return healthPoints;
-    }
-    public void ApplyKnockBack(float pForce, Vector3 pDirection)
-    {
-        rb.AddForce(pDirection * pForce);
     }
 }

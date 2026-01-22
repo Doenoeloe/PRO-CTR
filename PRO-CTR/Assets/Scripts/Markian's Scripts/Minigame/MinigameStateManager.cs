@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 public class MinigameStateManager : MonoBehaviour
 {
+    [SerializeField] GameObject minigame;
     GameObject player;
     WaveState CurrentState;
     [SerializeField] WaveLogic waveManager;
@@ -37,6 +38,9 @@ public class MinigameStateManager : MonoBehaviour
     {
         if (CurrentState == null) return;
         CurrentState.Update();
+        if (player.GetComponent<PlayerMovementMinigame>() == null) return;
+        Debug.Log(player.GetComponent<PlayerMovementMinigame>().name);
+        
         if (!player.GetComponent<PlayerMovementMinigame>().isAlive)
         {
             // stop the running sequence properly using the stored handle
@@ -77,6 +81,7 @@ public class MinigameStateManager : MonoBehaviour
     }
     public void StartMinigame()
     {
+        minigame.SetActive(true);
         // use the pre-created StartWaveState instance instead of new'ing another one
         CurrentState = StartWaveState;
         CurrentState.Enter();

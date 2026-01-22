@@ -1,10 +1,12 @@
+using System;
 using System.Collections;
 using UnityEngine;
 public class MinigameStateManager : MonoBehaviour
 {
     [SerializeField] GameObject minigame;
     GameObject player;
-    WaveState CurrentState;
+    [SerializeField] PlayerMovementMinigame playerMovementMinigame;
+    public WaveState CurrentState;
     [SerializeField] WaveLogic waveManager;
     public WaveLogic WaveManager => waveManager;
     public StartWaveState StartWaveState { get; private set; }
@@ -13,7 +15,9 @@ public class MinigameStateManager : MonoBehaviour
     public FinalWaveState FinalWaveState { get; private set; }
     public WinWaveState WinWaveState { get; private set; }
     public LoseWaveState LoseWaveState { get; private set; }
-
+    
+    private Action onMinigameComplete;
+    
     Coroutine _waveSequenceCoroutine;
 
     private void Awake()
@@ -38,10 +42,10 @@ public class MinigameStateManager : MonoBehaviour
     {
         if (CurrentState == null) return;
         CurrentState.Update();
-        if (player.GetComponent<PlayerMovementMinigame>() == null) return;
-        Debug.Log(player.GetComponent<PlayerMovementMinigame>().name);
+        if (playerMovementMinigame == null) return;
+        Debug.Log(playerMovementMinigame.name);
         
-        if (!player.GetComponent<PlayerMovementMinigame>().isAlive)
+        if (!playerMovementMinigame.isAlive)
         {
             // stop the running sequence properly using the stored handle
             if (_waveSequenceCoroutine != null)
@@ -78,9 +82,13 @@ public class MinigameStateManager : MonoBehaviour
         // Wait next 30 seconds (63 -> 93) then end
         yield return new WaitForSeconds(30f);
         ChangeState(WinWaveState);
+        
+        yield return new WaitForSeconds(5f);
+        onMinigameComplete?.Invoke();
     }
-    public void StartMinigame()
+    public void StartMinigame(Action onComplete)
     {
+        onMinigameComplete = onComplete;
         minigame.SetActive(true);
         // use the pre-created StartWaveState instance instead of new'ing another one
         CurrentState = StartWaveState;

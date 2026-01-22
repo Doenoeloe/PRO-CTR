@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3154189253704214686}
   - component: {fileID: 7683699867078486605}
   - component: {fileID: -762121413312791209}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Minigame_Projectile_v2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1000
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -106,6 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
   speed: 5
+  knockbackForce: 13
 --- !u!58 &-762121413312791209
 CircleCollider2D:
   m_ObjectHideFlags: 0

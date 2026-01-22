@@ -722,6 +722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WaveManager
   Projectile_v1: {fileID: 4439530096370039984, guid: 9a2d8c58d4851794dbaec9a4803c7349, type: 3}
   WaveText: {fileID: 2145123526}
+  player: {fileID: 1930674354}
 --- !u!114 &583748104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -760,6 +761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MinigameStateManager
   minigame: {fileID: 806213205}
+  playerMovementMinigame: {fileID: 1930674354}
   waveManager: {fileID: 583748103}
 --- !u!1 &584471300
 GameObject:
@@ -2865,51 +2867,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893752625}
   m_CullTransparentMesh: 1
---- !u!1 &984002650
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 984002652}
-  - component: {fileID: 984002651}
-  m_Layer: 0
-  m_Name: MinigameInput
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &984002651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 984002650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 362ac0d991c9c6b43bf98fb799508d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MinigameInput
-  minigame: {fileID: 806213205}
---- !u!4 &984002652
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 984002650}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 965.6749, y: 574.67346, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1141996654
 GameObject:
   m_ObjectHideFlags: 0
@@ -5667,6 +5624,10 @@ PrefabInstance:
       value: Minigame_Character
       objectReference: {fileID: 0}
     - target: {fileID: 87285373545655726, guid: 88f449fb5fe420e4f91e793b59838bdd, type: 3}
+      propertyPath: m_Layer
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 87285373545655726, guid: 88f449fb5fe420e4f91e793b59838bdd, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -5732,6 +5693,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4926899207284713139, guid: 88f449fb5fe420e4f91e793b59838bdd, type: 3}
   m_PrefabInstance: {fileID: 1930674352}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1930674354 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3057488012961282926, guid: 88f449fb5fe420e4f91e793b59838bdd, type: 3}
+  m_PrefabInstance: {fileID: 1930674352}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c7678ebc10f0c4382e3bfc90f76229, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
 --- !u!1 &1933226728
 GameObject:
   m_ObjectHideFlags: 0
@@ -5847,7 +5819,7 @@ GameObject:
   - component: {fileID: 2043986590}
   - component: {fileID: 2043986593}
   - component: {fileID: 2043986594}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: player 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6489,4 +6461,3 @@ SceneRoots:
   - {fileID: 542847401}
   - {fileID: 1434773894}
   - {fileID: 685603672}
-  - {fileID: 984002652}

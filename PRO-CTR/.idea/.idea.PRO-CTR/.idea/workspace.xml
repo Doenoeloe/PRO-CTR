@@ -6,9 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="729531e9-b5de-4c5e-867f-a30a39e40baf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PRO-CTR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PRO-CTR/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Minigame/Minigame_Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigame/Minigame_Character.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Minigame/Minigame_Projectile_v2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigame/Minigame_Projectile_v2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DoenoeloeScene/DoenoeloeScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DoenoeloeScene/DoenoeloeScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/Combat/EnemyCombat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/Combat/EnemyCombat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Markian's Scripts/Minigame/MinigameInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Markian's Scripts/Minigame/MinigameInput.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Markian's Scripts/Minigame/MinigameStateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Markian's Scripts/Minigame/MinigameStateManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Markian's Scripts/Minigame/WaveLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Markian's Scripts/Minigame/WaveLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +48,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -56,7 +65,7 @@
     &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Feat/Daniël&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Dev&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -138,7 +147,8 @@
       <workItem from="1768997652940" duration="868000" />
       <workItem from="1768998550496" duration="6000" />
       <workItem from="1768999340102" duration="5166000" />
-      <workItem from="1769085952400" duration="1269000" />
+      <workItem from="1769085952400" duration="2690000" />
+      <workItem from="1769090160810" duration="1445000" />
     </task>
     <servers />
   </component>

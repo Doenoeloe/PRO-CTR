@@ -7,7 +7,7 @@ namespace Daniel_scripts
     {
         [SerializeField] private EnemyMovement movement;
         private float totalHealth = 50;
-
+        
         
 
         private void Awake()
@@ -17,8 +17,6 @@ namespace Daniel_scripts
 
             if (movement != null)
                 movement.OnMoveFinished += EndTurn;
-            
-            
         }
 
         public override void StartTurn()

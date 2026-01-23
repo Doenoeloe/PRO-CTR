@@ -56,7 +56,11 @@ Physics2DSettings:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_LayerCollisionMatrix: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7fffffffffffffffffffffffefffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+=======
+  m_LayerCollisionMatrix: fffffefffffffcfffffffcfffffffffffffffcfffffffcfffffffcfffffffffffffffffffffffffffffffcfffffffcffff7ffcfffffffcfffffffcffffeffcff8803feff8903fdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+>>>>>>> Stashed changes
 =======
   m_LayerCollisionMatrix: fffffefffffffcfffffffcfffffffffffffffcfffffffcfffffffcfffffffffffffffffffffffffffffffcfffffffcffff7ffcfffffffcfffffffcffffeffcff8803feff8903fdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 >>>>>>> Stashed changes

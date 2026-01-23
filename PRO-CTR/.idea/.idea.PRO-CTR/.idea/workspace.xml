@@ -6,13 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="729531e9-b5de-4c5e-867f-a30a39e40baf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PRO-CTR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PRO-CTR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Minigame/Minigame_Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigame/Minigame_Character.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Attack_EyeAngelWings_SpriteSheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Attack_EyeAngelWings_SpriteSheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Idle_EyeAngelWings_SpriteSheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Idle_EyeAngelWings_SpriteSheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Intro_EyeAngelWings_SpriteSheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Intro_EyeAngelWings_SpriteSheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Skeleton-Sheet 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Skeleton-Sheet 1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Skeleton-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Skeleton-Sheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Minigame/Minigame_Projectile_v2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigame/Minigame_Projectile_v2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DoenoeloeScene/DoenoeloeScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DoenoeloeScene/DoenoeloeScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/Combat/EnemyCombat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/Combat/EnemyCombat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Markian's Scripts/Minigame/MinigameInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Markian's Scripts/Minigame/MinigameInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Markian's Scripts/Minigame/MinigameStateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Markian's Scripts/Minigame/MinigameStateManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Markian's Scripts/Minigame/WaveLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Markian's Scripts/Minigame/WaveLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/Combat/CombatLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/Combat/CombatLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/EnemyLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/EnemyLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/EnemyMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/PlayerLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/PlayerLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Deniz_scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Deniz_scripts/PlayerMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
@@ -41,7 +47,11 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/Combat/CombatLogic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/FrameAnimationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/GridOccupant.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/OnEnableChangeAnimLocation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/PlayerTurnState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/493b407efcb64dddad59f28bb0b831d3212400/2e/dcd50076/Vector2Int.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/493b407efcb64dddad59f28bb0b831d3212400/f7/d41bc1c0/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
@@ -148,7 +158,10 @@
       <workItem from="1768998550496" duration="6000" />
       <workItem from="1768999340102" duration="5166000" />
       <workItem from="1769085952400" duration="2690000" />
-      <workItem from="1769090160810" duration="1445000" />
+      <workItem from="1769090160810" duration="2024000" />
+      <workItem from="1769116401500" duration="2356000" />
+      <workItem from="1769118838477" duration="4039000" />
+      <workItem from="1769124819753" duration="5843000" />
     </task>
     <servers />
   </component>
@@ -175,63 +188,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/PlayerLogic.cs</url>
-          <line>31</line>
-          <properties documentPath="C:\School opdrachten\Github\PRO-CTR\PRO-CTR\Assets\Scripts\Daniel scripts\PlayerLogic.cs" containingFunctionPresentation="Method 'EndTurn'">
-            <startOffsets>
-              <option value="887" />
-            </startOffsets>
-            <endOffsets>
-              <option value="903" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/PlayerLogic.cs</url>
-          <line>32</line>
-          <properties documentPath="C:\School opdrachten\Github\PRO-CTR\PRO-CTR\Assets\Scripts\Daniel scripts\PlayerLogic.cs" containingFunctionPresentation="Method 'EndTurn'">
-            <startOffsets>
-              <option value="912" />
-            </startOffsets>
-            <endOffsets>
-              <option value="937" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/PlayerLogic.cs</url>
-          <line>33</line>
-          <properties documentPath="C:\School opdrachten\Github\PRO-CTR\PRO-CTR\Assets\Scripts\Daniel scripts\PlayerLogic.cs" containingFunctionPresentation="Method 'EndTurn'">
-            <startOffsets>
-              <option value="946" />
-            </startOffsets>
-            <endOffsets>
-              <option value="969" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/PlayerLogic.cs</url>
-          <line>38</line>
-          <properties documentPath="C:\School opdrachten\Github\PRO-CTR\PRO-CTR\Assets\Scripts\Daniel scripts\PlayerLogic.cs" containingFunctionPresentation="Method 'StartTurn'">
-            <startOffsets>
-              <option value="1051" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1074" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

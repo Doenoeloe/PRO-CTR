@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5180807932261270729}
   - component: {fileID: 8663212958593704751}
   - component: {fileID: 3057488012961282926}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Minigame_Character
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -225,4 +225,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59c7678ebc10f0c4382e3bfc90f76229, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  isAlive: 1
   canMove: 0

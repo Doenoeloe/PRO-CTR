@@ -18,9 +18,8 @@ public class EnemyCombat : MonoBehaviour
     public void StartAttackMinigame(Action onComplete)
     {
         // Start bullet hell minigame
-        stateManager.StartMinigame();
+        stateManager.StartMinigame(onComplete);
         // When player survives/completes, call onComplete()
-        onComplete?.Invoke();
     }
     
     public int CalculateAttackDamage()

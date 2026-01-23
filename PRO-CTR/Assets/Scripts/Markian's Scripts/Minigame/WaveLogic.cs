@@ -10,7 +10,7 @@ public class WaveLogic : MonoBehaviour
     //UI Text for wave info
     [SerializeField] TextMeshProUGUI WaveText;
     //Reference to player
-    GameObject player;
+    public PlayerMovementMinigame player;
     //radius of circle spawn
     float circleRadius = 5.0f;
     //number of projectiles in circle
@@ -18,10 +18,7 @@ public class WaveLogic : MonoBehaviour
     //spawn radius from player
     float spawnRadius = 10.0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void OnEnable()
-    {
-        player = GameObject.FindGameObjectWithTag("Player");
-    }
+    
     //Spawns a wall of projectiles aimed at the player
     public void SpawnProjectileWall()
     {
@@ -73,7 +70,7 @@ public class WaveLogic : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(pSeconds);
         WaveText.gameObject.SetActive(true);
-        if (player.GetComponent<PlayerMovementMinigame>().isAlive)
+        if (player.isAlive)
         {
             WaveText.text = "Nice! You have defended yourself.";
         }
@@ -82,7 +79,7 @@ public class WaveLogic : MonoBehaviour
             WaveText.text = "Loser";
         }
         yield return new WaitForSecondsRealtime(3);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            
     }
     public IEnumerator StartGameCountDown(int pSeconds)
     {
@@ -93,7 +90,7 @@ public class WaveLogic : MonoBehaviour
             if (i == 0)
             {
                 WaveText.gameObject.SetActive(false);
-                player.GetComponent<PlayerMovementMinigame>().canMove = true;
+                player.canMove = true;
             }
             WaveText.text = i.ToString();
             yield return new WaitForSeconds(1f);

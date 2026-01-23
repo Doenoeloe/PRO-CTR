@@ -22,8 +22,8 @@ TagManager:
   - Ground
   - Wall
   - PetAccesibleWall
-  - 
-  - 
+  - Bullet
+  - MinigamePlayer
   - 
   - 
   - 

@@ -24,14 +24,20 @@ public class CombatLogic : MonoBehaviour
 
     [SerializeField] private GameObject criticalButton;
     [SerializeField] private GameObject itemButton;
-    
-    [Header("Critical Button Images")]
-    [SerializeField] private Sprite chargeSprite;
+
+    [Header("Critical Button Images")] [SerializeField]
+    private Sprite chargeSprite;
+
     [SerializeField] private Sprite criticalSprite;
 
     [SerializeField] private GameObject combatActionUI;
     [SerializeField] private PlayerLogic playerLogic;
     [SerializeField] private EnemyLogic enemyLogic;
+
+    [SerializeField] private Animator animator;
+
+    [SerializeField] private Camera mainCamera;
+    [SerializeField] private GameObject frames;
     private enum TurnState
     {
         PlayerTurn,
@@ -72,12 +78,14 @@ public class CombatLogic : MonoBehaviour
     {
         currentState = TurnState.PlayerTurn;
         turnIndicatorText.text = "Your Turn";
-
+        
         playerActionUI.SetActive(true);
         enemyTurnUI.SetActive(false);
 
         // Enable action buttons
         SetupPlayerActions();
+
+        animator.SetTrigger("Idle");
     }
 
     void SetupPlayerActions()
@@ -112,8 +120,6 @@ public class CombatLogic : MonoBehaviour
         // Start fight minigame (timing bar, button mash, etc.)
         player.StartFightMinigame(() =>
         {
-            playerActionUI.SetActive(false);
-            
             float damage = player.CalculateFightDamage();
             enemy.TakeDamage(damage);
 
@@ -123,15 +129,13 @@ public class CombatLogic : MonoBehaviour
             }
             else
             {
-                StartEnemyTurn();
+                StartCoroutine(DelayedEnemyTurn());
             }
         });
     }
 
     public void OnCriticalSelected()
     {
-        playerActionUI.SetActive(false);
-
         if (isCriticalCharged)
         {
             // Critical is charged - unleash powerful attack!
@@ -151,7 +155,7 @@ public class CombatLogic : MonoBehaviour
                 }
                 else
                 {
-                    StartEnemyTurn();
+                    StartCoroutine(DelayedEnemyTurn());
                 }
             });
         }
@@ -172,7 +176,9 @@ public class CombatLogic : MonoBehaviour
     IEnumerator DelayedEnemyTurn()
     {
         // Give time for charge animation
-        yield return new WaitForSeconds(1f);
+        animator.SetTrigger("Start");
+        yield return new WaitForSeconds(2f);
+        playerActionUI.SetActive(false);
         StartEnemyTurn();
     }
 
@@ -197,10 +203,9 @@ public class CombatLogic : MonoBehaviour
     {
         currentState = TurnState.EnemyTurn;
         turnIndicatorText.text = "Enemy Turn";
-
+        
         playerActionUI.SetActive(false);
         enemyTurnUI.SetActive(true);
-
         // Enemy performs action then starts minigame
         StartCoroutine(EnemyTurnSequence());
     }
@@ -208,21 +213,24 @@ public class CombatLogic : MonoBehaviour
     IEnumerator EnemyTurnSequence()
     {
         // Enemy dialogue or action animation
+        PlaceFramesInWorld();
         yield return new WaitForSeconds(1f);
-
         // Start enemy attack minigame (dodge bullets, etc.)
         enemy.StartAttackMinigame(() =>
         {
+            
             int damage = enemy.CalculateAttackDamage();
             player.TakeDamage(damage);
 
             if (player.IsDead())
             {
                 EndCombat(false);
+                mainCamera.orthographicSize = 2.8f;
             }
             else
             {
                 StartPlayerTurn();
+                mainCamera.orthographicSize = 2.8f;
             }
         });
     }
@@ -231,7 +239,7 @@ public class CombatLogic : MonoBehaviour
 
     #region Combat End
 
-    void EndCombat(bool playerWon)
+    void EndCombat(bool playerWon)  
     {
         currentState = TurnState.GameOver;
 
@@ -239,6 +247,7 @@ public class CombatLogic : MonoBehaviour
         {
             Debug.Log("Player won!");
             combatActionUI.SetActive(false);
+            Destroy(enemy.gameObject);
             // Show victory screen, give rewards, return to overworld
         }
         else
@@ -249,6 +258,32 @@ public class CombatLogic : MonoBehaviour
     }
 
     #endregion
+    
+    void PlaceFramesInWorld()
+    {
+        mainCamera.orthographicSize = 5f;
+        
+        if (frames == null || mainCamera == null) return;
+
+        // Vind frames
+        Transform leftFrame = frames.transform.Find("LeftFrame");
+        Transform rightFrame = frames.transform.Find("RightFrame");
+        Transform topFrame = frames.transform.Find("TopFrame");
+        Transform bottomFrame = frames.transform.Find("BottomFrame");
+
+        // Zorg dat we een Z-waarde gebruiken die op het zichtbare vlak ligt
+        float z = Mathf.Abs(mainCamera.transform.position.z); // voor orthographic/perspective
+
+        // Linker en rechter rand
+        leftFrame.position = mainCamera.ViewportToWorldPoint(new Vector3(0, 0.5f, z));
+        rightFrame.position = mainCamera.ViewportToWorldPoint(new Vector3(1, 0.5f, z));
+
+        // Boven en onder rand
+        topFrame.position = mainCamera.ViewportToWorldPoint(new Vector3(0.5f, 1, z));
+        bottomFrame.position = mainCamera.ViewportToWorldPoint(new Vector3(0.5f, 0, z));
+    }
+
+
 }
 
 

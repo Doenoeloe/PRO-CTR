@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: fc41af371143c394fb542d4ea4608f0e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 619317622311284336
+    second: Idle_EyeAngelWings_SpriteSheet_0
+  - first:
+      213: -7152996829011427490
+    second: Idle_EyeAngelWings_SpriteSheet_1
+  - first:
+      213: -6073351877944766998
+    second: Idle_EyeAngelWings_SpriteSheet_2
+  - first:
+      213: 57789791529867151
+    second: Idle_EyeAngelWings_SpriteSheet_3
+  - first:
+      213: -8630923050087389993
+    second: Idle_EyeAngelWings_SpriteSheet_4
+  - first:
+      213: -4368386045173699980
+    second: Idle_EyeAngelWings_SpriteSheet_5
+  - first:
+      213: -5307177936234209120
+    second: Idle_EyeAngelWings_SpriteSheet_6
+  - first:
+      213: -3101466967232306979
+    second: Idle_EyeAngelWings_SpriteSheet_7
+  - first:
+      213: 786290687340697990
+    second: Idle_EyeAngelWings_SpriteSheet_8
+  - first:
+      213: -1157637443493194803
+    second: Idle_EyeAngelWings_SpriteSheet_9
+  - first:
+      213: -1001028608649925123
+    second: Idle_EyeAngelWings_SpriteSheet_10
+  - first:
+      213: -4656520719580391803
+    second: Idle_EyeAngelWings_SpriteSheet_11
+  - first:
+      213: -2589386130291426244
+    second: Idle_EyeAngelWings_SpriteSheet_12
+  - first:
+      213: 5939375239532218724
+    second: Idle_EyeAngelWings_SpriteSheet_13
+  - first:
+      213: 2948432219571675581
+    second: Idle_EyeAngelWings_SpriteSheet_14
+  - first:
+      213: -6172110158968673599
+    second: Idle_EyeAngelWings_SpriteSheet_15
+  - first:
+      213: -6305833757498021077
+    second: Idle_EyeAngelWings_SpriteSheet_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Idle_EyeAngelWings_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 236
+        width: 46
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ee001a812489800800000000000000
+      internalID: 619317622311284336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_EyeAngelWings_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 236
+        width: 45
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f374f38437bbc90800000000000000
+      internalID: -7152996829011427490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_EyeAngelWings_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 236
+        width: 45
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed862f15ae17bba0800000000000000
+      internalID: -6073351877944766998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_EyeAngelWings_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 236
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8718cb528f4dc000800000000000000
+      internalID: 57789791529867151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_EyeAngelWings_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 235
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d46fcbe63dc83880800000000000000
+      internalID: -8630923050087389993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_EyeAngelWings_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 162
+        width: 46
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47ae5af59006063c0800000000000000
+      internalID: -4368386045173699980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_EyeAngelWings_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 162
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a028fe19cd1956b0800000000000000
+      internalID: -5307177936234209120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_EyeAngelWings_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 163
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0a28fb93065f4d0800000000000000
+      internalID: -3101466967232306979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_EyeAngelWings_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 163
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689d325d63779ea00800000000000000
+      internalID: 786290687340697990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_EyeAngelWings_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 165
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc395e9e0ee3fefe0800000000000000
+      internalID: -1157637443493194803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_EyeAngelWings_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 92
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfdea6bb8c1ab12f0800000000000000
+      internalID: -1001028608649925123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_EyeAngelWings_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 93
+        width: 47
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5861a2ca317b06fb0800000000000000
+      internalID: -4656520719580391803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_EyeAngelWings_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 91
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3cf7ad9807a01cd0800000000000000
+      internalID: -2589386130291426244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_EyeAngelWings_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 91
+        width: 47
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 469811cef46ec6250800000000000000
+      internalID: 5939375239532218724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_EyeAngelWings_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 90
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db1e2e37b7feae820800000000000000
+      internalID: 2948432219571675581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_EyeAngelWings_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 18
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1caa71cf282485aa0800000000000000
+      internalID: -6172110158968673599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_EyeAngelWings_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 19
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2be9a77b9d2d78a0800000000000000
+      internalID: -6305833757498021077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Idle_EyeAngelWings_SpriteSheet_0: 619317622311284336
+      Idle_EyeAngelWings_SpriteSheet_1: -7152996829011427490
+      Idle_EyeAngelWings_SpriteSheet_10: -1001028608649925123
+      Idle_EyeAngelWings_SpriteSheet_11: -4656520719580391803
+      Idle_EyeAngelWings_SpriteSheet_12: -2589386130291426244
+      Idle_EyeAngelWings_SpriteSheet_13: 5939375239532218724
+      Idle_EyeAngelWings_SpriteSheet_14: 2948432219571675581
+      Idle_EyeAngelWings_SpriteSheet_15: -6172110158968673599
+      Idle_EyeAngelWings_SpriteSheet_16: -6305833757498021077
+      Idle_EyeAngelWings_SpriteSheet_2: -6073351877944766998
+      Idle_EyeAngelWings_SpriteSheet_3: 57789791529867151
+      Idle_EyeAngelWings_SpriteSheet_4: -8630923050087389993
+      Idle_EyeAngelWings_SpriteSheet_5: -4368386045173699980
+      Idle_EyeAngelWings_SpriteSheet_6: -5307177936234209120
+      Idle_EyeAngelWings_SpriteSheet_7: -3101466967232306979
+      Idle_EyeAngelWings_SpriteSheet_8: 786290687340697990
+      Idle_EyeAngelWings_SpriteSheet_9: -1157637443493194803
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

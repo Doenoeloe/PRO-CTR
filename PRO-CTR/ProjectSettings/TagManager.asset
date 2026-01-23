@@ -42,5 +42,23 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 3517945597
+    locked: 0
+  - name: Walls
+    uniqueID: 2866646781
+    locked: 0
+  - name: Enemy
+    uniqueID: 688076291
+    locked: 0
+  - name: Player
+    uniqueID: 2822046739
+    locked: 0
+  - name: Minigame
+    uniqueID: 813191493
+    locked: 0
+  - name: Fight
+    uniqueID: 135735381
+    locked: 0
   m_RenderingLayers:
   - Default

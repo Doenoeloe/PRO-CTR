@@ -6124,7 +6124,11 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &984002650
+=======
+--- !u!1 &1007770830
+>>>>>>> Stashed changes
 =======
 --- !u!1 &1007770830
 >>>>>>> Stashed changes
@@ -6140,6 +6144,7 @@ GameObject:
   m_Component:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - component: {fileID: 984002652}
   - component: {fileID: 984002651}
   m_Layer: 0
@@ -6147,11 +6152,16 @@ GameObject:
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
   - component: {fileID: 1007770832}
   - component: {fileID: 1007770831}
   m_Layer: 0
   m_Name: Spot Light 2D (3)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -6162,7 +6172,11 @@ GameObject:
   m_IsActive: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!114 &984002651
+=======
+--- !u!114 &1007770831
+>>>>>>> Stashed changes
 =======
 --- !u!114 &1007770831
 >>>>>>> Stashed changes
@@ -6176,6 +6190,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 984002650}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -6185,6 +6200,8 @@ MonoBehaviour:
   minigame: {fileID: 806213205}
 --- !u!4 &984002652
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   m_GameObject: {fileID: 1007770830}
@@ -6235,6 +6252,9 @@ MonoBehaviour:
   - {x: -0.5, y: 0.5, z: 0}
 --- !u!4 &1007770832
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -6245,6 +6265,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 984002650}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -6252,11 +6273,16 @@ Transform:
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 1007770830}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.48888066, w: 0.8723507}
   m_LocalPosition: {x: 8.66, y: -4.24, z: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -6266,7 +6292,11 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -287.8}
+>>>>>>> Stashed changes
 =======
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -287.8}
 >>>>>>> Stashed changes
@@ -9833,8 +9863,11 @@ GameObject:
   - component: {fileID: 2043986594}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Layer: 0
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   - component: {fileID: 2043986595}
@@ -10598,8 +10631,11 @@ SceneRoots:
   - {fileID: 685603672}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 984002652}
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   - {fileID: 1424156714}
@@ -10611,6 +10647,9 @@ SceneRoots:
   - {fileID: 1997066887}
   - {fileID: 1007770832}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

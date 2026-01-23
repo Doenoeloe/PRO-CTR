@@ -7,6 +7,7 @@
     <list default="true" id="729531e9-b5de-4c5e-867f-a30a39e40baf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PRO-CTR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PRO-CTR/.idea/workspace.xml" afterDir="false" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DoenoeloeScene/DoenoeloeScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DoenoeloeScene/DoenoeloeScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/Combat/EnemyCombat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/Combat/EnemyCombat.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Markian's Scripts/Minigame/MinigameStateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Markian's Scripts/Minigame/MinigameStateManager.cs" afterDir="false" />
@@ -19,6 +20,16 @@
       <change beforePath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Minigame/Minigame_Projectile_v2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigame/Minigame_Projectile_v2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DoenoeloeScene/DoenoeloeScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DoenoeloeScene/DoenoeloeScene.unity" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Attack_EyeAngelWings_SpriteSheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Attack_EyeAngelWings_SpriteSheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Idle_EyeAngelWings_SpriteSheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Idle_EyeAngelWings_SpriteSheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Intro_EyeAngelWings_SpriteSheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Intro_EyeAngelWings_SpriteSheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Skeleton-Sheet 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Skeleton-Sheet 1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Skeleton-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Skeleton-Sheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Minigame/Minigame_Projectile_v2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigame/Minigame_Projectile_v2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DoenoeloeScene/DoenoeloeScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DoenoeloeScene/DoenoeloeScene.unity" afterDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/Combat/CombatLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/Combat/CombatLogic.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/EnemyLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/EnemyLogic.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Daniel scripts/EnemyMovement.cs" afterDir="false" />
@@ -168,6 +179,9 @@
       <workItem from="1769116401500" duration="2356000" />
       <workItem from="1769118838477" duration="4039000" />
       <workItem from="1769124819753" duration="5843000" />
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     </task>
     <servers />

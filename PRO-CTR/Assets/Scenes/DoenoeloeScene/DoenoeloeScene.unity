@@ -487,6 +487,7 @@ Transform:
   - {fileID: 734728240}
   - {fileID: 1742748508}
   - {fileID: 1413571887}
+  - {fileID: 655386331}
   m_Father: {fileID: 806213209}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &542847399
@@ -684,6 +685,7 @@ GameObject:
   - component: {fileID: 583748102}
   - component: {fileID: 583748104}
   - component: {fileID: 583748103}
+  - component: {fileID: 583748105}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -745,6 +747,20 @@ MonoBehaviour:
   combatActionUI: {fileID: 1434773893}
   playerLogic: {fileID: 2043986586}
   enemyLogic: {fileID: 1852202767}
+--- !u!114 &583748105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583748101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ebbec63b24d7b54d94ada144e5f7cd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MinigameStateManager
+  minigame: {fileID: 806213205}
+  waveManager: {fileID: 583748103}
 --- !u!1 &584471300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,7 +1064,7 @@ RectTransform:
   m_GameObject: {fileID: 621360530}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 353846971}
@@ -1272,16 +1288,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655386330}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 806213209}
+  m_Father: {fileID: 428291660}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1921, y: -1081}
+  m_AnchoredPosition: {x: -432.43802, y: -1285.6353}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &655386332
@@ -1915,7 +1931,6 @@ RectTransform:
   m_Children:
   - {fileID: 1930674353}
   - {fileID: 428291660}
-  - {fileID: 655386331}
   - {fileID: 2145123524}
   m_Father: {fileID: 1434773894}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2850,6 +2865,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893752625}
   m_CullTransparentMesh: 1
+--- !u!1 &984002650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 984002652}
+  - component: {fileID: 984002651}
+  m_Layer: 0
+  m_Name: MinigameInput
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &984002651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984002650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 362ac0d991c9c6b43bf98fb799508d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MinigameInput
+  minigame: {fileID: 806213205}
+--- !u!4 &984002652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984002650}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 965.6749, y: 574.67346, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1141996654
 GameObject:
   m_ObjectHideFlags: 0
@@ -5155,7 +5215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1824553392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5217,7 +5277,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 7
   m_TargetDisplay: 0
 --- !u!224 &1824553395
 RectTransform:
@@ -5231,9 +5291,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 621360531}
   - {fileID: 1933226729}
   - {fileID: 115221712}
-  - {fileID: 621360531}
   - {fileID: 640423032}
   - {fileID: 107951748}
   m_Father: {fileID: 1434773894}
@@ -5491,6 +5551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCombat
   maxHealth: 30
   healthSlider: {fileID: 621360532}
+  stateManager: {fileID: 583748105}
 --- !u!1 &1855616524
 GameObject:
   m_ObjectHideFlags: 0
@@ -6428,3 +6489,4 @@ SceneRoots:
   - {fileID: 542847401}
   - {fileID: 1434773894}
   - {fileID: 685603672}
+  - {fileID: 984002652}

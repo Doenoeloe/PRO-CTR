@@ -18,7 +18,7 @@ public class WaveLogic : MonoBehaviour
     //spawn radius from player
     float spawnRadius = 10.0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void OnEnable()
     {
         player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -80,13 +80,14 @@ public class WaveLogic : MonoBehaviour
         else
         {
             WaveText.text = "Loser";
-
         }
         yield return new WaitForSecondsRealtime(3);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public IEnumerator StartGameCountDown(int pSeconds)
     {
+        Debug.Log(WaveText != null);
+        WaveText.gameObject.SetActive(true);
         for (int i = pSeconds; i >= 0; i--)
         {
             if (i == 0)

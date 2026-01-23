@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 public class MinigameStateManager : MonoBehaviour
 {
+    [SerializeField] GameObject minigame;
     GameObject player;
     WaveState CurrentState;
     [SerializeField] WaveLogic waveManager;
@@ -28,20 +29,18 @@ public class MinigameStateManager : MonoBehaviour
         WinWaveState = new WinWaveState(this);
         LoseWaveState = new LoseWaveState(this);
     }
-    void Start()
+    void OnEnable()
     {
+        Debug.Log(waveManager != null);
         player = GameObject.FindWithTag("Player");
-
-        // use the pre-created StartWaveState instance instead of new'ing another one
-        CurrentState = StartWaveState;
-        CurrentState.Enter();
-
-        // Start the wave sequence and keep the Coroutine handle so we can stop it later
-        _waveSequenceCoroutine = StartCoroutine(RunWavesSequence());
     }
     void Update()
     {
+        if (CurrentState == null) return;
         CurrentState.Update();
+        if (player.GetComponent<PlayerMovementMinigame>() == null) return;
+        Debug.Log(player.GetComponent<PlayerMovementMinigame>().name);
+        
         if (!player.GetComponent<PlayerMovementMinigame>().isAlive)
         {
             // stop the running sequence properly using the stored handle
@@ -79,5 +78,15 @@ public class MinigameStateManager : MonoBehaviour
         // Wait next 30 seconds (63 -> 93) then end
         yield return new WaitForSeconds(30f);
         ChangeState(WinWaveState);
+    }
+    public void StartMinigame()
+    {
+        minigame.SetActive(true);
+        // use the pre-created StartWaveState instance instead of new'ing another one
+        CurrentState = StartWaveState;
+        CurrentState.Enter();
+
+        // Start the wave sequence and keep the Coroutine handle so we can stop it later
+        _waveSequenceCoroutine = StartCoroutine(RunWavesSequence());
     }
 }

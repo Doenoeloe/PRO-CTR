@@ -8,6 +8,7 @@ public class EnemyCombat : MonoBehaviour
     [SerializeField] private float maxHealth = 30;
     [SerializeField] private Slider healthSlider;
     private float currentHealth;
+    [SerializeField]  private MinigameStateManager stateManager;
     
     void Start()
     {
@@ -17,7 +18,9 @@ public class EnemyCombat : MonoBehaviour
     public void StartAttackMinigame(Action onComplete)
     {
         // Start bullet hell minigame
+        stateManager.StartMinigame();
         // When player survives/completes, call onComplete()
+        onComplete?.Invoke();
     }
     
     public int CalculateAttackDamage()

@@ -8,9 +8,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Minigame.unity
     guid: d96c4a5a923816c4f8d3936e1702a932
+  - enabled: 1
+    path: Assets/Scenes/Main_Menu_Ruben.unity
+    guid: fbb1b10406bb4364d93e1925413909e6
+  - enabled: 1
+    path: Assets/Scenes/DoenoeloeScene/DoenoeloeScene.unity
+    guid: d90aef3442323ca4da7d11413509422d
+  - enabled: 0
+    path: Assets/Scenes/DoenoeloeScene/CombatScene.unity
+    guid: a490e26e6560ccf4c948b5bc9af12ca4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

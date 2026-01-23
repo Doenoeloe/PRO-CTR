@@ -10,6 +10,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -26,7 +29,20 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/Combat/CombatLogic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/FrameAnimationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/GridOccupant.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/OnEnableChangeAnimLocation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Daniel scripts/PlayerTurnState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/493b407efcb64dddad59f28bb0b831d3212400/2e/dcd50076/Vector2Int.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/493b407efcb64dddad59f28bb0b831d3212400/f7/d41bc1c0/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -39,9 +55,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Feat/Daniël",
+    "git-widget-placeholder": "Dev",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -110,6 +127,26 @@
       <workItem from="1768206606904" duration="15000" />
       <workItem from="1768206712963" duration="368000" />
       <workItem from="1768207160016" duration="510000" />
+      <workItem from="1768298848928" duration="3959000" />
+      <workItem from="1768392456046" duration="1150000" />
+      <workItem from="1768479887593" duration="245000" />
+      <workItem from="1768480162239" duration="14000" />
+      <workItem from="1768480275081" duration="4000" />
+      <workItem from="1768481422765" duration="7268000" />
+      <workItem from="1768566518973" duration="730000" />
+      <workItem from="1768568768485" duration="249000" />
+      <workItem from="1768812541247" duration="14440000" />
+      <workItem from="1768896526258" duration="7761000" />
+      <workItem from="1768997652940" duration="868000" />
+      <workItem from="1768998550496" duration="6000" />
+      <workItem from="1768999340102" duration="5166000" />
+      <workItem from="1769085952400" duration="2690000" />
+      <workItem from="1769090160810" duration="2024000" />
+      <workItem from="1769116401500" duration="2356000" />
+      <workItem from="1769118838477" duration="4039000" />
+      <workItem from="1769124819753" duration="5843000" />
+      <workItem from="1769136572746" duration="4000" />
+      <workItem from="1769136663945" duration="580000" />
     </task>
     <servers />
   </component>
@@ -123,6 +160,17 @@
     <option name="unityProjectFolder" value="true" />
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
